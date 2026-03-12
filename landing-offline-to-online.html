@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Выводим офлайн-бизнес в интернет — первые заявки за 7 дней</title>
+  <meta name="description" content="Переводим офлайн-бизнес в интернет: лендинг с конверсией 6–9%, реклама в Яндекс.Директ, первые заявки уже через 7 дней. Бесплатный разбор вашей ниши — без обязательств.">
+  <link rel="canonical" href="https://domain.ru/ai-marketing-offline-to-online">
+
+  <!-- Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": "Маркетинговое агентство",
+        "description": "Выводим офлайн-бизнес в интернет — первые заявки за 7 дней",
+        "url": "https://domain.ru/ai-marketing-offline-to-online",
+        "areaServed": "RU"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Боюсь потратить деньги и не получить результат",
+            "acceptedAnswer": { "@type": "Answer", "text": "Предоплата 50%. Остаток — по неделям, когда уже видите работу. Никакого «заплати всё вперёд»." }
+          },
+          {
+            "@type": "Question",
+            "name": "Я не разбираюсь в маркетинге — мне будет сложно?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Мы объясняем всё на понятном языке, без терминов. Ваша задача — ответить на несколько вопросов о бизнесе. Остальное — наше." }
+          },
+          {
+            "@type": "Question",
+            "name": "Уже пробовали рекламу — не сработало",
+            "acceptedAnswer": { "@type": "Answer", "text": "Покажем на разборе, почему именно не сработало — и что сделаем по-другому. Бесплатно, без обязательств." }
+          },
+          {
+            "@type": "Question",
+            "name": "Не знаю, с чего начать",
+            "acceptedAnswer": { "@type": "Answer", "text": "Начните с разбора. 30 минут — и у вас будет чёткий план: что, в какой последовательности, за какие деньги." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ===== VARIABLES ===== */
+    :root {
+      --bg: #F8F7F0;
+      --accent1: #9DF7FF;
+      --accent2: #FF8080;
+      --text: #333333;
+      --text-sec: #666666;
+      --white: #ffffff;
+      --shadow: 0 4px 20px rgba(0,0,0,0.08);
+      --shadow-hover: 0 8px 32px rgba(0,0,0,0.13);
+      --radius: 16px;
+      --radius-sm: 12px;
+      --container: 1100px;
+      --font: 'Montserrat', system-ui, sans-serif;
+    }
+
+    /* ===== RESET ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ===== PROGRESS BAR ===== */
+    .progress-bar {
+      position: fixed;
+      top: 0; left: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      width: 0;
+      z-index: 9999;
+      transition: width 0.08s linear;
+    }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1 { font-size: clamp(1.9rem, 4.5vw, 3rem); font-weight: 700; line-height: 1.2; }
+    h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 700; line-height: 1.25; }
+    h3 { font-size: 1rem; font-weight: 600; line-height: 1.4; }
+    p { line-height: 1.75; }
+
+    /* ===== LAYOUT ===== */
+    .container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
+    .section { padding: 96px 0; }
+    .section-white { background: var(--white); }
+    .section-dark { background: var(--text); }
+    .section-hero { padding-top: 136px; }
+
+    /* ===== LABELS ===== */
+    .label {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-sec);
+      margin-bottom: 14px;
+    }
+    .label-light { color: rgba(255,255,255,0.4); }
+
+    .accent-line {
+      display: block;
+      width: 44px; height: 4px;
+      background: var(--accent1);
+      border-radius: 2px;
+      margin: 16px 0 32px;
+    }
+    .accent-line-coral { background: var(--accent2); }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 32px;
+      border-radius: var(--radius);
+      font-family: var(--font);
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--accent1);
+      color: var(--text);
+    }
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(157, 247, 255, 0.55);
+    }
+    .btn-primary:active { transform: scale(0.97); }
+    .btn-lg { padding: 20px 44px; font-size: 1.05rem; }
+
+    /* ===== CARDS ===== */
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+
+    /* ===== FADE IN ===== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      position: fixed;
+      top: 3px; left: 0; right: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+    .site-header.scrolled {
+      background: rgba(248, 247, 240, 0.96);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 2px 24px rgba(0,0,0,0.07);
+    }
+    .header-inner {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .logo {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+      flex-shrink: 0;
+    }
+    .logo span { color: var(--accent2); }
+    .nav {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-sec);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav a:hover { color: var(--text); }
+    .header-cta { padding: 10px 22px; font-size: 0.85rem; }
+
+    /* ===== HERO ===== */
+    .hero-layout {
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      gap: 64px;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--white);
+      border: 1px solid rgba(0,0,0,0.09);
+      border-radius: 100px;
+      padding: 6px 16px 6px 10px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-sec);
+      margin-bottom: 22px;
+    }
+    .badge-dot {
+      width: 8px; height: 8px;
+      background: var(--accent2);
+      border-radius: 50%;
+      flex-shrink: 0;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.82); }
+    }
+    .hero-title { margin-bottom: 22px; }
+    .hero-mark {
+      position: relative;
+      display: inline;
+    }
+    .hero-mark::after {
+      content: '';
+      position: absolute;
+      bottom: 3px; left: 0; right: 0;
+      height: 9px;
+      background: var(--accent1);
+      opacity: 0.45;
+      z-index: -1;
+      border-radius: 4px;
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--text-sec);
+      max-width: 480px;
+      margin-bottom: 32px;
+    }
+    .hero-cta-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 36px;
+      flex-wrap: wrap;
+    }
+    .hstat-num {
+      font-size: 1.55rem;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--text);
+    }
+    .hstat-desc {
+      font-size: 0.72rem;
+      color: var(--text-sec);
+      margin-top: 4px;
+    }
+
+    /* Hero card */
+    .hero-card {
+      background: var(--white);
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+      padding: 28px;
+      position: relative;
+    }
+    .hcard-badge {
+      position: absolute;
+      top: -12px; right: 20px;
+      background: var(--accent2);
+      color: var(--white);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 100px;
+    }
+    .hcard-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-sec);
+      margin-bottom: 18px;
+    }
+    .hcard-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .hcard-row:last-of-type { border-bottom: none; }
+    .hcard-row-label { font-size: 0.82rem; color: var(--text-sec); }
+    .hcard-before { font-size: 0.82rem; color: var(--accent2); font-weight: 600; text-decoration: line-through; margin-right: 8px; }
+    .hcard-after { font-size: 0.92rem; font-weight: 700; color: var(--text); }
+    .hcard-highlight {
+      margin-top: 20px;
+      padding: 16px;
+      background: rgba(157,247,255,0.15);
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--accent1);
+    }
+    .hcard-highlight-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-sec);
+      margin-bottom: 6px;
+    }
+    .hcard-highlight-val {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .hcard-highlight-note {
+      font-size: 0.7rem;
+      color: var(--text-sec);
+      margin-top: 4px;
+    }
+
+    /* ===== FEATURES (block 2) ===== */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 40px;
+    }
+    .feature-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 26px;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .feature-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+    .feature-icon {
+      font-size: 1.5rem;
+      margin-bottom: 14px;
+      display: block;
+    }
+    .feature-card h3 { font-size: 0.95rem; margin-bottom: 8px; }
+    .feature-card p { font-size: 0.85rem; color: var(--text-sec); line-height: 1.65; }
+    .feature-tag {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      background: var(--accent1);
+      color: var(--text);
+      padding: 3px 10px;
+      border-radius: 100px;
+    }
+
+    /* ===== MICRO JOBS (block 3) ===== */
+    .jobs-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 32px;
+    }
+    .job-item {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      background: var(--bg);
+      border-radius: var(--radius);
+      padding: 22px 24px;
+      transition: transform 0.2s;
+    }
+    .job-item:hover { transform: translateX(5px); }
+    .job-num {
+      flex-shrink: 0;
+      width: 36px; height: 36px;
+      background: var(--accent1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    .job-item h3 { font-size: 0.95rem; margin-bottom: 5px; }
+    .job-item p { font-size: 0.85rem; color: var(--text-sec); }
+
+    /* ===== AHA / ROI CALC (block 4) ===== */
+    .aha-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+    .aha-checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin: 22px 0 28px;
+    }
+    .aha-checklist li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-size: 0.95rem;
+    }
+    .check-dot {
+      flex-shrink: 0;
+      width: 22px; height: 22px;
+      background: var(--accent1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: 900;
+      margin-top: 2px;
+    }
+    .no-oblig {
+      font-size: 0.78rem;
+      color: var(--text-sec);
+      margin-top: 12px;
+    }
+
+    /* ROI Calculator */
+    .roi-calc {
+      background: var(--white);
+      border-radius: 20px;
+      box-shadow: 0 10px 44px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+    .roi-calc-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+    .roi-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      background: var(--accent1);
+      padding: 3px 9px;
+      border-radius: 100px;
+    }
+    .calc-field { margin-bottom: 18px; }
+    .calc-field label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-sec);
+      margin-bottom: 7px;
+    }
+    .calc-field label span { font-weight: 700; color: var(--text); }
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      outline: none;
+      cursor: pointer;
+      background: linear-gradient(to right, var(--accent1) 0%, var(--accent1) var(--fill, 15%), #DEDDD6 var(--fill, 15%));
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: var(--text);
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.22);
+    }
+    .calc-results {
+      margin-top: 20px;
+      padding: 18px;
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+    }
+    .calc-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 7px 0;
+      font-size: 0.83rem;
+    }
+    .calc-row:not(:last-child) { border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .calc-row-label { color: var(--text-sec); }
+    .calc-row-val { font-weight: 700; }
+    .calc-row-val.green { color: #22C55E; }
+    .calc-delta {
+      margin-top: 16px;
+      padding: 14px 16px;
+      background: linear-gradient(135deg, rgba(157,247,255,0.25), rgba(157,247,255,0.08));
+      border-left: 3px solid var(--accent1);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+    .calc-delta-label { font-size: 0.7rem; color: var(--text-sec); margin-bottom: 4px; }
+    .calc-delta-val { font-size: 1.35rem; font-weight: 700; }
+    .calc-delta-year { font-size: 0.75rem; color: var(--text-sec); margin-top: 3px; }
+
+    /* ===== CASES SWITCHER (block 5) ===== */
+    .cases-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 22px;
+      flex-wrap: wrap;
+    }
+    .case-tab {
+      padding: 9px 20px;
+      border-radius: 100px;
+      border: 2px solid rgba(0,0,0,0.1);
+      background: transparent;
+      font-family: var(--font);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--text-sec);
+      transition: all 0.2s;
+    }
+    .case-tab.active { background: var(--text); color: var(--white); border-color: var(--text); }
+    .case-tab:hover:not(.active) { border-color: var(--text); color: var(--text); }
+    .case-panel { display: none; animation: fadeUp 0.3s ease; }
+    .case-panel.active { display: block; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .case-company {
+      font-size: 0.83rem;
+      font-weight: 600;
+      color: var(--text-sec);
+      margin-bottom: 14px;
+    }
+    .case-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .case-col {
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+      padding: 20px;
+    }
+    .case-col-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+    .case-col-label.before { color: var(--accent2); }
+    .case-col-label.after { color: #22C55E; }
+    .case-col ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .case-col ul li { font-size: 0.85rem; display: flex; gap: 8px; align-items: flex-start; }
+    .case-col.before ul li::before { content: '✕'; color: var(--accent2); font-weight: 700; flex-shrink: 0; }
+    .case-col.after ul li::before { content: '✓'; color: #22C55E; font-weight: 700; flex-shrink: 0; }
+    .case-quote {
+      margin-top: 20px;
+      padding: 18px 22px;
+      border-left: 3px solid var(--accent1);
+      background: rgba(157,247,255,0.08);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-style: italic;
+      font-size: 0.88rem;
+      color: var(--text-sec);
+      line-height: 1.7;
+    }
+
+    /* ===== VALUE (block 6) ===== */
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 40px;
+    }
+    .value-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 26px;
+      box-shadow: var(--shadow);
+      border-top: 3px solid transparent;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .value-card:nth-child(1) { border-top-color: var(--accent1); }
+    .value-card:nth-child(2) { border-top-color: var(--accent2); }
+    .value-card:nth-child(3) { border-top-color: #A8E6CF; }
+    .value-card:nth-child(4) { border-top-color: #FFD93D; }
+    .value-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+    .value-card-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-sec);
+      margin-bottom: 10px;
+    }
+    .value-card h3 { font-size: 0.95rem; margin-bottom: 7px; }
+    .value-card p { font-size: 0.84rem; color: var(--text-sec); }
+    .trust-block {
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 40px;
+      align-items: center;
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+    .stars { color: #F5A623; font-size: 1.1rem; margin-bottom: 10px; }
+    .review-text {
+      font-style: italic;
+      font-size: 0.92rem;
+      line-height: 1.75;
+      margin-bottom: 10px;
+    }
+    .review-author { font-size: 0.78rem; font-weight: 600; color: var(--text-sec); }
+    .trust-stats { display: flex; flex-direction: column; gap: 22px; min-width: 170px; }
+    .tstat { text-align: right; }
+    .tstat-num { font-size: 1.7rem; font-weight: 700; line-height: 1; }
+    .tstat-desc { font-size: 0.72rem; color: var(--text-sec); margin-top: 3px; }
+
+    /* ===== RECOGNITION (block 7) ===== */
+    .rec-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 30px;
+    }
+    .rec-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 16px 22px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius-sm);
+      transition: background 0.2s;
+    }
+    .rec-item:hover { background: rgba(255,255,255,0.11); }
+    .rec-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 2px; }
+    .rec-item p { font-size: 0.88rem; color: rgba(255,255,255,0.82); }
+    .rec-emotion {
+      margin-top: 36px;
+      padding: 28px 32px;
+      background: rgba(157,247,255,0.07);
+      border: 1px solid rgba(157,247,255,0.18);
+      border-radius: var(--radius);
+    }
+    .rec-emotion p { font-size: 0.92rem; color: rgba(255,255,255,0.68); }
+    .rec-emotion p strong { color: var(--white); }
+
+    /* ===== STEPS (block 8) ===== */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 48px;
+      position: relative;
+    }
+    .steps-grid::before {
+      content: '';
+      position: absolute;
+      top: 27px; left: 12%; right: 12%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      z-index: 0;
+    }
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 12px;
+      position: relative;
+      z-index: 1;
+    }
+    .step-num {
+      width: 54px; height: 54px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 3px solid var(--accent1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 16px rgba(157,247,255,0.38);
+    }
+    .step-time {
+      font-size: 0.67rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent2);
+      margin-bottom: 6px;
+    }
+    .step h3 { font-size: 0.92rem; margin-bottom: 7px; }
+    .step p { font-size: 0.8rem; color: var(--text-sec); }
+    .step-result {
+      margin-top: 10px;
+      padding: 7px 12px;
+      background: rgba(157,247,255,0.14);
+      border-radius: var(--radius-sm);
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+
+    /* ===== POINT B (block 9) ===== */
+    .pb-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+    .pb-emotions {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 30px;
+    }
+    .pb-emotion {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .pb-emoji { font-size: 1.4rem; flex-shrink: 0; }
+    .pb-emotion h3 { font-size: 0.92rem; margin-bottom: 3px; }
+    .pb-emotion p { font-size: 0.83rem; color: var(--text-sec); }
+    .pb-story {
+      background: var(--white);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 34px;
+      position: relative;
+      overflow: hidden;
+    }
+    .pb-story::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    }
+    .pb-story-time {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-sec);
+      margin-bottom: 14px;
+    }
+    .pb-story-text { font-size: 0.97rem; line-height: 1.85; }
+    .pb-story-text strong { font-weight: 700; }
+
+    /* ===== FAQ (block 10) ===== */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 38px;
+    }
+    .faq-item {
+      background: var(--bg);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.06);
+      transition: box-shadow 0.2s;
+    }
+    .faq-item:hover { box-shadow: var(--shadow); }
+    .faq-trigger {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 26px;
+      background: none;
+      border: none;
+      font-family: var(--font);
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+    }
+    .faq-icon {
+      flex-shrink: 0;
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-sec);
+      transition: transform 0.3s, background 0.2s;
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); background: var(--accent1); color: var(--text); }
+    .faq-body { max-height: 0; overflow: hidden; transition: max-height 0.38s ease; }
+    .faq-body-inner {
+      padding: 0 26px 20px;
+      font-size: 0.88rem;
+      color: var(--text-sec);
+      line-height: 1.75;
+    }
+
+    /* ===== COMPARISON TABLE (block 11) ===== */
+    .comp-filter {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 22px;
+      flex-wrap: wrap;
+    }
+    .comp-filter-label { font-size: 0.8rem; color: var(--text-sec); font-weight: 500; }
+    .comp-toggle {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      color: var(--text-sec);
+    }
+    .comp-toggle input[type="checkbox"] { width: 15px; height: 15px; accent-color: var(--accent1); cursor: pointer; }
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .comp-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; min-width: 560px; }
+    .comp-table th {
+      padding: 14px 18px;
+      text-align: left;
+      font-weight: 700;
+      background: var(--bg);
+      border-bottom: 2px solid rgba(0,0,0,0.06);
+    }
+    .comp-table th.col-us { background: var(--accent1); }
+    .comp-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      color: var(--text-sec);
+      vertical-align: top;
+    }
+    .comp-table td:first-child { font-weight: 600; color: var(--text); }
+    .comp-table td.col-us { color: var(--text); font-weight: 600; background: rgba(157,247,255,0.07); }
+    .comp-table tr:hover td { background: rgba(0,0,0,0.02); }
+    .comp-table tr:hover td.col-us { background: rgba(157,247,255,0.13); }
+    .comp-table tr.key-row td:first-child::after { content: ' ★'; color: var(--accent2); }
+
+    /* ===== FINAL CTA (block 12) ===== */
+    .final-cta-section { text-align: center; }
+    .final-cta-section h2 { color: var(--white); font-size: clamp(1.7rem, 3.5vw, 2.5rem); }
+    .final-bullets {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 30px auto;
+      max-width: 420px;
+      text-align: left;
+    }
+    .fbullet {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.82);
+    }
+    .fbullet-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent1); flex-shrink: 0; }
+    .urgency {
+      margin-top: 22px;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.45);
+    }
+    .urgency strong { color: var(--accent2); }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      padding: 36px 0;
+      border-top: 1px solid rgba(0,0,0,0.07);
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .footer-note { font-size: 0.78rem; color: var(--text-sec); margin-top: 5px; }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a {
+      font-size: 0.78rem;
+      color: var(--text-sec);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--text); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1023px) {
+      .hero-layout { grid-template-columns: 1fr; }
+      .hero-card { display: none; }
+      .steps-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+      .steps-grid::before { display: none; }
+    }
+    @media (max-width: 767px) {
+      .section { padding: 60px 0; }
+      .section-hero { padding-top: 96px; }
+      .features-grid, .value-grid, .aha-layout, .case-cols, .pb-layout, .trust-block { grid-template-columns: 1fr; }
+      .trust-stats { flex-direction: row; flex-wrap: wrap; }
+      .tstat { text-align: left; }
+      .steps-grid { grid-template-columns: 1fr; }
+      .hero-stats { gap: 24px; }
+      .nav { display: none; }
+      .btn-lg { padding: 16px 28px; font-size: 0.95rem; }
+      .comp-table { font-size: 0.78rem; }
+      .comp-table th, .comp-table td { padding: 11px 13px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#" class="logo">Маркетинг<span>.</span>Онлайн</a>
+      <nav>
+        <ul class="nav">
+          <li><a href="#block-2-core-job">Подход</a></li>
+          <li><a href="#block-5-aha-proof">Кейсы</a></li>
+          <li><a href="#block-8-how-we-work">Процесс</a></li>
+          <li><a href="#block-10-barriers">FAQ</a></li>
+          <li><a href="#block-11-comparison">Сравнение</a></li>
+        </ul>
+      </nav>
+      <a href="#block-12-final-cta" class="btn btn-primary header-cta">Получить разбор →</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== BLOCK 1: HERO ========== -->
+    <section id="block-1-oneliner" class="section section-hero">
+      <div class="container">
+        <div class="hero-layout">
+
+          <!-- Left: text -->
+          <div>
+            <div class="hero-badge">
+              <div class="badge-dot"></div>
+              Бесплатный разбор — осталось 8 мест в месяц
+            </div>
+
+            <h1 class="hero-title">
+              Выводим ваш офлайн-бизнес в интернет —
+              <span class="hero-mark">первые заявки за 7 дней</span>
+            </h1>
+
+            <p class="hero-sub">
+              Пока вас нет в Яндексе — ваши клиенты уходят к конкурентам. Мы это исправим быстро, понятно и с гарантией результата.
+            </p>
+
+            <div class="hero-cta-row">
+              <a href="#block-4-aha" class="btn btn-primary btn-lg">
+                Получить бесплатный разбор →
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div>
+                <div class="hstat-num">417</div>
+                <div class="hstat-desc">проектов в базе</div>
+              </div>
+              <div>
+                <div class="hstat-num">7 дней</div>
+                <div class="hstat-desc">до первых заявок</div>
+              </div>
+              <div>
+                <div class="hstat-num">6–9%</div>
+                <div class="hstat-desc">конверсия сайта</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: hero card -->
+          <div class="hero-card">
+            <div class="hcard-badge">Реальный кейс</div>
+            <div class="hcard-label">Детейлинг KATHARSIS · Нижний Новгород</div>
+
+            <div class="hcard-row">
+              <span class="hcard-row-label">Заявок в месяц</span>
+              <div>
+                <span class="hcard-before">5</span>
+                <span class="hcard-after">94</span>
+              </div>
+            </div>
+            <div class="hcard-row">
+              <span class="hcard-row-label">Стоимость заявки</span>
+              <div>
+                <span class="hcard-before">40 000 ₽</span>
+                <span class="hcard-after">1 100 ₽</span>
+              </div>
+            </div>
+            <div class="hcard-row">
+              <span class="hcard-row-label">Срок запуска</span>
+              <span class="hcard-after">7 дней</span>
+            </div>
+
+            <div class="hcard-highlight">
+              <div class="hcard-highlight-label">Экономия на заявках / мес.</div>
+              <div class="hcard-highlight-val">≈ 2 100 000 ₽</div>
+              <div class="hcard-highlight-note">94 заявки × экономия 38 900 ₽ на каждой</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BLOCK 2: CORE JOB ========== -->
+    <section id="block-2-core-job" class="section fade-in">
+      <div class="container">
+        <span class="label">Наш подход</span>
+        <h2>Помогаем бизнесу с репутацией получить клиентов из интернета — без хаоса и слива бюджета</h2>
+        <span class="accent-line"></span>
+        <p style="max-width:600px;color:var(--text-sec)">
+          Вы годами строили имя на рекомендациях. Теперь рынок перешёл в онлайн, а вас там нет. Мы переводим вашу репутацию в цифру — и делаем это системно, за 7 дней.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <span class="feature-icon">🎯</span>
+            <h3>Исследуем аудиторию по методу AJTBD</h3>
+            <p>Находим именно тех, кто уже ищет вас в интернете, и создаём сайт под их запросы. Не шаблон — живой инструмент.</p>
+            <span class="feature-tag">Метод AJTBD</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">📈</span>
+            <h3>Лендинг с конверсией 6–9%</h3>
+            <p>Это в 3 раза выше среднего по рынку. Из 100 посетителей — 6–9 оставляют заявку. Не «красиво», а продаёт.</p>
+            <span class="feature-tag">В 3× выше рынка</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🔥</span>
+            <h3>Реклама в Яндекс.Директ на горячий спрос</h3>
+            <p>Только те, кто уже хочет купить — никакой «широкой аудитории» и слива бюджета впустую.</p>
+            <span class="feature-tag">Горячий спрос</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">📊</span>
+            <h3>Отчётность на понятном языке</h3>
+            <p>Еженедельно: сколько заявок пришло, во сколько обошлась каждая, что делаем дальше. Без терминов.</p>
+            <span class="feature-tag">Каждую неделю</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BLOCK 3: MICRO JOBS ========== -->
+    <section id="block-3-micro-jobs" class="section section-white fade-in">
+      <div class="container">
+        <span class="label">Что мы берём на себя</span>
+        <h2>Мы берём на себя всё — вы занимаетесь бизнесом</h2>
+        <span class="accent-line accent-line-coral"></span>
+
+        <div class="jobs-list">
+          <div class="job-item">
+            <div class="job-num">1</div>
+            <div>
+              <h3>Разбираемся в вашей нише за вас</h3>
+              <p>Изучаем конкурентов, аудиторию, запросы. Вам не нужно объяснять маркетологу, чем вы занимаетесь — мы разберёмся сами.</p>
+            </div>
+          </div>
+          <div class="job-item">
+            <div class="job-num">2</div>
+            <div>
+              <h3>Создаём сайт, который продаёт, а не просто «красиво выглядит»</h3>
+              <p>Структура выстроена под ваших клиентов: их страхи, вопросы, критерии выбора.</p>
+            </div>
+          </div>
+          <div class="job-item">
+            <div class="job-num">3</div>
+            <div>
+              <h3>Запускаем рекламу и оптимизируем каждый день</h3>
+              <p>Не «настроили и забыли» — ежедневная работа с объявлениями, ставками, конверсиями.</p>
+            </div>
+          </div>
+          <div class="job-item">
+            <div class="job-num">4</div>
+            <div>
+              <h3>Объясняем результаты без терминов</h3>
+              <p>Вы всегда понимаете, что происходит и куда идут деньги.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BLOCK 4: AHA + ROI CALC ========== -->
+    <section id="block-4-aha" class="section fade-in">
+      <div class="container">
+        <div class="aha-layout">
+
+          <!-- Left: text -->
+          <div>
+            <span class="label">Узнайте прямо сейчас</span>
+            <h2>Есть ли спрос на ваши услуги в интернете?</h2>
+            <span class="accent-line"></span>
+            <p style="color:var(--text-sec);margin-bottom:6px">На бесплатном 30-минутном разборе я покажу:</p>
+            <ul class="aha-checklist">
+              <li><div class="check-dot">✓</div><span>Сколько людей в вашем городе ежемесячно ищут ваши услуги в Яндексе</span></li>
+              <li><div class="check-dot">✓</div><span>Кто из конкурентов уже забирает этих клиентов</span></li>
+              <li><div class="check-dot">✓</div><span>Что нужно сделать первым шагом, чтобы получить заявки за 7–14 дней</span></li>
+            </ul>
+            <a href="#block-12-final-cta" class="btn btn-primary btn-lg">
+              Хочу разбор — покажите, сколько я теряю →
+            </a>
+            <p class="no-oblig">Никаких обязательств. Конкретные цифры по вашей нише — сразу на созвоне.</p>
+          </div>
+
+          <!-- Right: ROI Calculator -->
+          <div class="roi-calc">
+            <div class="roi-calc-title">
+              Калькулятор прибыли
+              <span class="roi-badge">Интерактив</span>
+            </div>
+
+            <div class="calc-field">
+              <label>Средний чек <span id="avgCheckVal">40 000 ₽</span></label>
+              <input type="range" id="avgCheck" min="1000" max="200000" step="1000" value="40000" oninput="updateCalc()">
+            </div>
+            <div class="calc-field">
+              <label>Трафик в месяц, чел. <span id="trafficVal">1 200</span></label>
+              <input type="range" id="trafficPerMonth" min="100" max="50000" step="100" value="1200" oninput="updateCalc()">
+            </div>
+            <div class="calc-field">
+              <label>Конверсия сейчас, % <span id="convCurrentVal">1%</span></label>
+              <input type="range" id="convCurrent" min="0.5" max="10" step="0.1" value="1" oninput="updateCalc()">
+            </div>
+            <div class="calc-field">
+              <label>Конверсия после нас, % <span id="convTargetVal">7%</span></label>
+              <input type="range" id="convTarget" min="1" max="20" step="0.5" value="7" oninput="updateCalc()">
+            </div>
+            <div class="calc-field">
+              <label>Маржинальность, % <span id="marginVal">40%</span></label>
+              <input type="range" id="margin" min="10" max="90" step="5" value="40" oninput="updateCalc()">
+            </div>
+
+            <div class="calc-results">
+              <div class="calc-row">
+                <span class="calc-row-label">Заявок сейчас</span>
+                <span class="calc-row-val" id="leadsBefore">12</span>
+              </div>
+              <div class="calc-row">
+                <span class="calc-row-label">Заявок после</span>
+                <span class="calc-row-val green" id="leadsAfter">84</span>
+              </div>
+              <div class="calc-row">
+                <span class="calc-row-label">Прибыль сейчас / мес.</span>
+                <span class="calc-row-val" id="profitBefore">192 000 ₽</span>
+              </div>
+              <div class="calc-row">
+                <span class="calc-row-label">Прибыль после / мес.</span>
+                <span class="calc-row-val green" id="profitAfter">1 344 000 ₽</span>
+              </div>
+            </div>
+
+            <div class="calc-delta">
+              <div class="calc-delta-label">Дополнительная прибыль в месяц</div>
+              <div class="calc-delta-val" id="deltaMonth">+ 1 152 000 ₽</div>
+              <div class="calc-delta-year" id="deltaYear">≈ 13 824 000 ₽ в год</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BLOCK 5: AHA PROOF + CASES ========== -->
+    <section id="block-5-aha-proof" class="section section-white fade-in">
+      <div class="container">
+        <span class="label">Реальные кейсы</span>
+        <h2>Как это работает на практике — цифры наших клиентов</h2>
+        <span class="accent-line"></span>
+
+        <div class="cases-tabs" id="casesTabs">
+          <button class="case-tab active" data-case="detailing">Детейлинг KATHARSIS</button>
+          <button class="case-tab" data-case="coworking">Коворкинг Москва</button>
+        </div>
+
+        <div>
+          <!-- Case 1 -->
+          <div class="case-panel active" id="case-detailing">
+            <div class="case-company">Студия детейлинга KATHARSIS · Нижний Новгород</div>
+            <div class="case-cols">
+              <div class="case-col before">
+                <div class="case-col-label before">До работы с нами</div>
+                <ul>
+                  <li>Не было сайта вообще</li>
+                  <li>Клиенты только по сарафану</li>
+                  <li>Непредсказуемый поток заявок</li>
+                  <li>5 заявок по 40 000 ₽ каждая</li>
+                </ul>
+              </div>
+              <div class="case-col after">
+                <div class="case-col-label after">После работы с нами</div>
+                <ul>
+                  <li>Сайт, Яндекс.Директ, соцсети</li>
+                  <li>94 заявки по 1 100 ₽</li>
+                  <li>Работы стало существенно больше</li>
+                  <li>Выросло количество звонков</li>
+                </ul>
+              </div>
+            </div>
+            <div class="case-quote">
+              «С Егором работаем около полугода. Изначально не было сайта вообще. Сейчас — красивый и информативный сайт, Яндекс.Директ, соцсети, еженедельные отчёты. Работы стало существенно больше, выросло количество звонков. Очень доволен и буду рекомендовать как грамотного специалиста»
+            </div>
+          </div>
+
+          <!-- Case 2 -->
+          <div class="case-panel" id="case-coworking">
+            <div class="case-company">Коворкинг · Москва</div>
+            <div class="case-cols">
+              <div class="case-col before">
+                <div class="case-col-label before">До работы с нами</div>
+                <ul>
+                  <li>Стоимость заявки ~40 000 ₽</li>
+                  <li>Загрузка пространства 12–15%</li>
+                  <li>Нет системного онлайн-маркетинга</li>
+                </ul>
+              </div>
+              <div class="case-col after">
+                <div class="case-col-label after">После работы с нами</div>
+                <ul>
+                  <li>Стоимость заявки снизилась до 1 100 ₽</li>
+                  <li>Загрузка выросла более чем в 2 раза</li>
+                  <li>Прозрачная отчётность, понятные цифры</li>
+                </ul>
+              </div>
+            </div>
+            <div class="case-quote">
+              «Стоимость заявки в 10–30 раз ниже, чем при работе с типичным подрядчиком»
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BLOCK 6: VALUE + TRUST ========== -->
+    <section id="block-6-value" class="section fade-in">
+      <div class="container">
+        <span class="label">Результат через 30 дней</span>
+        <h2>Что получает бизнес через 30 дней работы с нами</h2>
+        <span class="accent-line"></span>
+
+        <div class="value-grid">
+          <div class="value-card">
+            <div class="value-card-label">💰 Измеримая ценность</div>
+            <h3>Стоимость заявки в 10–30 раз ниже</h3>
+            <p>Кейс: коворкинг в Москве — с 40 000 ₽ до 1 100 ₽ за заявку. Не за квартал — за первый месяц.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-card-label">⚡ Функциональная ценность</div>
+            <h3>Первые заявки — через 7 дней</h3>
+            <p>Не «подождите 3 месяца». Реальный результат уже в первый месяц работы.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-card-label">🧘 Эмоциональная ценность</div>
+            <h3>Вы перестаёте бояться конкурентов</h3>
+            <p>Теперь вы в интернете — и вас находят. Тревога уходит, уверенность приходит.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-card-label">🏆 Социальная ценность</div>
+            <h3>Выглядите как крупные игроки рынка</h3>
+            <p>Клиенты видят вас в поиске и доверяют больше. Профессионально — онлайн и офлайн.</p>
+          </div>
+        </div>
+
+        <!-- Trust block -->
+        <div class="trust-block">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              «С Егором работаем около полугода. Изначально не было сайта вообще. Сейчас — красивый и информативный сайт, Яндекс.Директ, соцсети, еженедельные отчёты. Работы стало существенно больше, выросло количество звонков. Очень доволен и буду рекомендовать как грамотного специалиста»
+            </p>
+            <div class="review-author">— Студия детейлинга KATHARSIS, Нижний Новгород</div>
+          </div>
+          <div class="trust-stats">
+            <div class="tstat">
+              <div class="tstat-num">417</div>
+              <div class="tstat-desc">успешных проектов</div>
+            </div>
+            <div class="tstat">
+              <div class="tstat-num">7</div>
+              <div class="tstat-desc">дней до первых заявок</div>
+            </div>
+            <div class="tstat">
+              <div class="tstat-num">6–9%</div>
+              <div class="tstat-desc">конверсия сайта</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BLOCK 7: RECOGNITION ========== -->
+    <section id="block-7-recognition" class="section section-dark fade-in">
+      <div class="container">
+        <span class="label label-light">Узнаёте себя?</span>
+        <h2 style="color:var(--white)">Если хоть один пункт — про вас, пора действовать</h2>
+        <span class="accent-line" style="background:var(--accent1)"></span>
+
+        <div class="rec-list">
+          <div class="rec-item">
+            <div class="rec-icon">💬</div>
+            <p>Клиент сказал вам: «Я вас нашёл через знакомых — в интернете вас нет»</p>
+          </div>
+          <div class="rec-item">
+            <div class="rec-icon">📍</div>
+            <p>Вы заходите на Яндекс.Карты и видите конкурента с 200 отзывами. А у вас — ноль</p>
+          </div>
+          <div class="rec-item">
+            <div class="rec-icon">😤</div>
+            <p>Пробовали разобраться с рекламой сами — запутались и бросили</p>
+          </div>
+          <div class="rec-item">
+            <div class="rec-icon">🤷</div>
+            <p>Слышали «нужен сайт, нужна реклама» — но не знаете, с чего начать и кому доверять</p>
+          </div>
+          <div class="rec-item">
+            <div class="rec-icon">😰</div>
+            <p>Боитесь отдать деньги и получить красивые обещания без результата</p>
+          </div>
+        </div>
+
+        <div class="rec-emotion">
+          <p>
+            <strong>Тревога. Ощущение, что что-то упускаете. Злость на себя, что всё откладываете.</strong>
+            <br><br>
+            Это нормально. Большинство сильных бизнесов пришли в интернет именно с этой точки. Разница — кто помог им сделать первый шаг правильно.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BLOCK 8: HOW WE WORK ========== -->
+    <section id="block-8-how-we-work" class="section fade-in">
+      <div class="container">
+        <span class="label">Наш процесс</span>
+        <h2>Как мы переводим ваш офлайн-бизнес в онлайн — шаг за шагом</h2>
+        <span class="accent-line"></span>
+
+        <div class="steps-grid">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-time">1–2 дня</div>
+            <h3>Исследование</h3>
+            <p>Изучаем вашу аудиторию, конкурентов и спрос в нише.</p>
+            <div class="step-result">Знаем, кто ваш покупатель</div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-time">3–5 дней</div>
+            <h3>Сайт</h3>
+            <p>Создаём лендинг, который снимает возражения вашей аудитории.</p>
+            <div class="step-result">Конверсия 6–9%</div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-time">с 7-го дня</div>
+            <h3>Реклама</h3>
+            <p>Запускаем Яндекс.Директ на людей, которые прямо сейчас ищут ваши услуги.</p>
+            <div class="step-result">Первые заявки</div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-time">Еженедельно</div>
+            <h3>Отчётность</h3>
+            <p>Присылаем отчёт: сколько заявок, по какой цене, что оптимизируем.</p>
+            <div class="step-result">Полная прозрачность</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BLOCK 9: POINT B ========== -->
+    <section id="block-9-point-b" class="section fade-in" style="background:linear-gradient(135deg,#F8F7F0 0%,rgba(157,247,255,0.12) 100%)">
+      <div class="container">
+        <div class="pb-layout">
+
+          <div>
+            <span class="label">Ваш результат</span>
+            <h2>Как выглядит ваш бизнес через 30 дней</h2>
+            <span class="accent-line"></span>
+
+            <div class="pb-emotions">
+              <div class="pb-emotion">
+                <div class="pb-emoji">😌</div>
+                <div>
+                  <h3>Спокойствие</h3>
+                  <p>Маркетинг работает без вашего участия.</p>
+                </div>
+              </div>
+              <div class="pb-emotion">
+                <div class="pb-emoji">💪</div>
+                <div>
+                  <h3>Уверенность</h3>
+                  <p>Вы знаете, откуда приходят клиенты и сколько они стоят.</p>
+                </div>
+              </div>
+              <div class="pb-emotion">
+                <div class="pb-emoji">🏅</div>
+                <div>
+                  <h3>Гордость</h3>
+                  <p>Вы наконец-то выглядите профессионально в интернете.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pb-story">
+            <div class="pb-story-time">📱 Утро, 30-й день</div>
+            <p class="pb-story-text">
+              Вы открываете телефон — <strong>4 новые заявки за ночь.</strong> Люди нашли вас через Яндекс, прочитали сайт, оставили контакты.
+              <br><br>
+              Вы звоните — они уже «тёплые», уже про вас знают. Менеджер закрывает <strong>двоих из четырёх.</strong>
+              <br><br>
+              Вы занимаетесь бизнесом, а не ищете клиентов.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BLOCK 10: FAQ / BARRIERS ========== -->
+    <section id="block-10-barriers" class="section section-white fade-in">
+      <div class="container">
+        <span class="label">Часто спрашивают</span>
+        <h2>Снимаем барьеры — честно и по делу</h2>
+        <span class="accent-line accent-line-coral"></span>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-trigger" onclick="toggleFAQ(this)">
+              <span>😰 Боюсь потратить деньги и не получить результат</span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-body">
+              <div class="faq-body-inner">
+                Предоплата — 50%. Остаток платите по неделям, когда уже видите работу и результаты. Никакого «заплати всё вперёд» — мы зарабатываем, когда вы видите эффект.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-trigger" onclick="toggleFAQ(this)">
+              <span>🤯 Я не разбираюсь в этом — мне будет сложно?</span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-body">
+              <div class="faq-body-inner">
+                Мы объясняем всё на понятном языке, без терминов. Вы видите отчёт — и сразу понимаете, что происходит. Ваша задача — ответить на несколько вопросов о бизнесе. Остальное — наше.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-trigger" onclick="toggleFAQ(this)">
+              <span>😒 Уже пробовали рекламу — не сработало</span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-body">
+              <div class="faq-body-inner">
+                Покажем на разборе, почему именно не сработало — и что мы сделаем по-другому. Конкретно, с примерами. Бесплатно, без обязательств. Если наш подход вас не убедит — не работаем.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-trigger" onclick="toggleFAQ(this)">
+              <span>🤷 Не знаю, с чего начать</span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-body">
+              <div class="faq-body-inner">
+                Начните с разбора. 30 минут — и у вас будет чёткий план: что делать, в какой последовательности, за какие деньги. Даже если потом не будете работать с нами — получите конкретный маршрут.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BLOCK 11: COMPARISON ========== -->
+    <section id="block-11-comparison" class="section fade-in">
+      <div class="container">
+        <span class="label">Почему мы</span>
+        <h2>Сравните сами — и выберите лучшее</h2>
+        <span class="accent-line"></span>
+
+        <div class="comp-filter">
+          <span class="comp-filter-label">Фильтр:</span>
+          <label class="comp-toggle">
+            <input type="checkbox" id="keyFilter" onchange="filterRows()">
+            Показать только ключевые критерии
+          </label>
+        </div>
+
+        <div class="table-wrap">
+          <table class="comp-table" id="compTable">
+            <thead>
+              <tr>
+                <th>Критерий</th>
+                <th>Фрилансер</th>
+                <th>Типовое агентство</th>
+                <th class="col-us">✦ Мы</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="key-row" data-key="true">
+                <td>Подход к работе</td>
+                <td>Разовые задачи, без системы</td>
+                <td>Шаблонные решения, много клиентов одновременно</td>
+                <td class="col-us">Системный подход: исследование, стратегия, запуск, отчётность</td>
+              </tr>
+              <tr class="key-row" data-key="true">
+                <td>Скорость запуска</td>
+                <td>Сроки плавают</td>
+                <td>Старт через 3–6 недель</td>
+                <td class="col-us">Запуск за 7 дней по прописанному процессу</td>
+              </tr>
+              <tr data-key="false">
+                <td>Аналитика и отчётность</td>
+                <td>Отчётов может не быть, всё в личке</td>
+                <td>Сложные отчёты, много терминов</td>
+                <td class="col-us">Еженедельные отчёты на понятном языке, фокус на заявках</td>
+              </tr>
+              <tr class="key-row" data-key="true">
+                <td>Ответственность за результат</td>
+                <td>Нет прозрачных KPI</td>
+                <td>Ориентир на показы и клики</td>
+                <td class="col-us">Фокус на заявках и стоимости лида, KPI привязаны к результату</td>
+              </tr>
+              <tr data-key="false">
+                <td>Использование ИИ</td>
+                <td>Точечные эксперименты</td>
+                <td>Редко системно внедряют ИИ</td>
+                <td class="col-us">ИИ-инструменты для анализа, связи каналов и отчётности</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BLOCK 12: FINAL CTA ========== -->
+    <section id="block-12-final-cta" class="section section-dark final-cta-section fade-in">
+      <div class="container">
+        <span class="label label-light">Следующий шаг</span>
+        <h2>Узнайте, сколько клиентов вы теряете прямо сейчас</h2>
+
+        <div class="final-bullets">
+          <div class="fbullet">
+            <div class="fbullet-dot"></div>
+            <span>Сколько людей уже ищут вас в Яндексе — и уходят к конкурентам</span>
+          </div>
+          <div class="fbullet">
+            <div class="fbullet-dot"></div>
+            <span>Конкретные первые шаги для получения заявок за 7–14 дней</span>
+          </div>
+          <div class="fbullet">
+            <div class="fbullet-dot"></div>
+            <span>30 минут, без обязательств, конкретные цифры по вашей нише</span>
+          </div>
+        </div>
+
+        <a href="https://t.me/yourhandle" class="btn btn-primary btn-lg" style="display:inline-flex;margin:0 auto">
+          Хочу бесплатный разбор — покажите мою точку роста →
+        </a>
+
+        <p class="urgency">
+          Разборов в месяц — не более <strong>8</strong>. Работаю только с теми, кому реально могу дать результат.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <a href="#" class="logo" style="font-size:0.95rem">Маркетинг<span>.</span>Онлайн</a>
+          <p class="footer-note">© 2026 · Выводим офлайн-бизнес в интернет</p>
+        </div>
+        <div class="footer-links">
+          <a href="#block-4-aha">Бесплатный разбор</a>
+          <a href="#block-5-aha-proof">Кейсы</a>
+          <a href="#block-10-barriers">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JS ===== -->
+  <script>
+    // --- Progress bar ---
+    const progressBar = document.getElementById('progressBar');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      progressBar.style.width = (docHeight > 0 ? (scrollTop / docHeight) * 100 : 0) + '%';
+    }, { passive: true });
+
+    // --- Header scroll ---
+    const siteHeader = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => {
+      siteHeader.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // --- Smooth scroll ---
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id === '#') return;
+        const el = document.querySelector(id);
+        if (el) {
+          e.preventDefault();
+          window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // --- Fade in on scroll ---
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // --- ROI Calculator ---
+    function fmtRub(n) {
+      return Math.round(n).toLocaleString('ru-RU') + ' ₽';
+    }
+    function setFill(slider) {
+      const pct = ((+slider.value - +slider.min) / (+slider.max - +slider.min)) * 100;
+      slider.style.setProperty('--fill', pct + '%');
+    }
+    function updateCalc() {
+      const avgCheck    = +document.getElementById('avgCheck').value;
+      const traffic     = +document.getElementById('trafficPerMonth').value;
+      const convCurrent = +document.getElementById('convCurrent').value;
+      const convTarget  = +document.getElementById('convTarget').value;
+      const margin      = +document.getElementById('margin').value;
+
+      document.getElementById('avgCheckVal').textContent   = avgCheck.toLocaleString('ru-RU') + ' ₽';
+      document.getElementById('trafficVal').textContent    = traffic.toLocaleString('ru-RU');
+      document.getElementById('convCurrentVal').textContent = convCurrent + '%';
+      document.getElementById('convTargetVal').textContent  = convTarget + '%';
+      document.getElementById('marginVal').textContent      = margin + '%';
+
+      document.querySelectorAll('input[type="range"]').forEach(setFill);
+
+      const leadsBefore = traffic * (convCurrent / 100);
+      const leadsAfter  = traffic * (convTarget  / 100);
+      const profitBefore = leadsBefore * avgCheck * (margin / 100);
+      const profitAfter  = leadsAfter  * avgCheck * (margin / 100);
+      const delta = profitAfter - profitBefore;
+
+      document.getElementById('leadsBefore').textContent  = Math.round(leadsBefore);
+      document.getElementById('leadsAfter').textContent   = Math.round(leadsAfter);
+      document.getElementById('profitBefore').textContent = fmtRub(profitBefore);
+      document.getElementById('profitAfter').textContent  = fmtRub(profitAfter);
+      document.getElementById('deltaMonth').textContent   = '+ ' + fmtRub(delta);
+      document.getElementById('deltaYear').textContent    = '≈ ' + fmtRub(delta * 12) + ' в год';
+    }
+    updateCalc(); // init
+
+    // --- Cases switcher ---
+    document.querySelectorAll('.case-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.case-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.case-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        const panel = document.getElementById('case-' + tab.dataset.case);
+        if (panel) panel.classList.add('active');
+      });
+    });
+
+    // --- FAQ accordion ---
+    function toggleFAQ(btn) {
+      const item = btn.closest('.faq-item');
+      const body = item.querySelector('.faq-body');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-body').style.maxHeight = '0';
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        body.style.maxHeight = body.scrollHeight + 'px';
+      }
+    }
+
+    // --- Comparison filter ---
+    function filterRows() {
+      const checked = document.getElementById('keyFilter').checked;
+      document.querySelectorAll('#compTable tbody tr').forEach(row => {
+        row.style.display = checked && row.dataset.key !== 'true' ? 'none' : '';
+      });
+    }
+  </script>
+
+</body>
+</html>
