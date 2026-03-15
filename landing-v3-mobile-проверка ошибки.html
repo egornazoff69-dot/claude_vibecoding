@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Выводим офлайн-бизнес в интернет — первые заявки за 7 дней | nazarov.marketing</title>
+  <meta name="description" content="Переводим офлайн-бизнес в интернет: лендинг с конверсией 6–9%, реклама в Яндекс.Директ, первые заявки уже через 7 дней. Бесплатный разбор вашей ниши — без обязательств.">
+  <link rel="canonical" href="https://nazarov.marketing/offline-to-online">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","name":"nazarov.marketing","description":"Выводим офлайн-бизнес в интернет — первые заявки за 7 дней","url":"https://nazarov.marketing/offline-to-online","areaServed":"RU"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Боюсь потратить деньги и не получить результат","acceptedAnswer":{"@type":"Answer","text":"Предоплата 50%. Остаток — по неделям, когда уже видите работу. Никакого «заплати всё вперёд»."}},{"@type":"Question","name":"Я не разбираюсь в маркетинге — мне будет сложно?","acceptedAnswer":{"@type":"Answer","text":"Мы объясняем всё на понятном языке. Ваша задача — ответить на вопросы о бизнесе. Остальное — наше."}},{"@type":"Question","name":"Уже пробовали рекламу — не сработало","acceptedAnswer":{"@type":"Answer","text":"Покажем на разборе, почему не сработало и что сделаем по-другому. Бесплатно, без обязательств."}},{"@type":"Question","name":"Не знаю, с чего начать","acceptedAnswer":{"@type":"Answer","text":"Начните с разбора. 30 минут — чёткий план: что, в какой последовательности, за какие деньги."}}]}]}
+  </script>
+  <style>
+    /* === VARIABLES === */
+    :root{
+      --bg:#F8F7F0; --accent1:#9DF7FF; --accent2:#FF8080;
+      --text:#333333; --text-sec:#666666; --white:#ffffff;
+      --shadow:0 4px 20px rgba(0,0,0,0.08);
+      --shadow-hover:0 8px 32px rgba(0,0,0,0.13);
+      --radius:16px; --radius-sm:12px;
+      --container:1100px; --font:'Montserrat',system-ui,sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden;font-weight:500;}
+
+    /* === PROGRESS BAR === */
+    .progress-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--accent1),var(--accent2));width:0;z-index:9999;transition:width .08s linear;}
+
+    /* === TYPOGRAPHY === */
+    h1{font-size:clamp(1.9rem,4.5vw,3rem);font-weight:700;line-height:1.2;}
+    h2{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:700;line-height:1.25;}
+    h3{font-size:1rem;font-weight:600;line-height:1.4;}
+    p{line-height:1.75;}
+
+    /* === LAYOUT === */
+    .container{max-width:var(--container);margin:0 auto;padding:0 24px;}
+    .section{padding:96px 0;}
+    .section-white{background:var(--white);}
+    .section-dark{background:var(--text);}
+    .section-hero{padding-top:136px;}
+    .label{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text-sec);margin-bottom:14px;}
+    .label-light{color:rgba(255,255,255,.4);}
+    .accent-line{display:block;width:44px;height:4px;background:var(--accent1);border-radius:2px;margin:16px 0 32px;}
+    .accent-line-coral{background:var(--accent2);}
+
+    /* === BUTTONS === */
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:16px 32px;border-radius:var(--radius);font-family:var(--font);font-weight:700;font-size:1rem;cursor:pointer;border:none;text-decoration:none;transition:transform .18s ease,box-shadow .18s ease;white-space:nowrap;}
+    .btn-primary{background:var(--accent1);color:var(--text);}
+    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(157,247,255,.55);}
+    .btn-primary:active{transform:scale(.97);}
+    .btn-lg{padding:20px 44px;font-size:1.05rem;}
+    .btn-ghost{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.25);}
+    .btn-ghost:hover{border-color:var(--accent1);color:var(--accent1);}
+
+    /* === CARDS === */
+    .card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px;transition:transform .2s,box-shadow .2s;}
+    .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);}
+
+    /* === FADE IN === */
+    .fade-in{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;}
+    .fade-in.visible{opacity:1;transform:translateY(0);}
+
+    /* === HEADER === */
+    .site-header{position:fixed;top:3px;left:0;right:0;z-index:1000;transition:all .3s ease;}
+    .site-header.scrolled{background:rgba(248,247,240,.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 2px 24px rgba(0,0,0,.07);}
+    .header-inner{max-width:var(--container);margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px;}
+    .logo{font-size:1.05rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:-.02em;flex-shrink:0;}
+    .logo span{color:var(--accent2);}
+    .nav{display:flex;gap:24px;list-style:none;}
+    .nav a{font-size:.82rem;font-weight:600;color:var(--text-sec);text-decoration:none;transition:color .2s;}
+    .nav a:hover{color:var(--text);}
+    .header-cta{padding:10px 22px;font-size:.85rem;}
+
+    /* === HERO === */
+    .hero-cta-hint{font-size:.78rem;color:var(--text-sec);margin-top:10px;font-weight:500;}
+    /* hero-layout defined below with compact card */
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1px solid rgba(0,0,0,.09);border-radius:100px;padding:6px 16px 6px 10px;font-size:.78rem;font-weight:600;color:var(--text-sec);margin-bottom:22px;}
+    .badge-dot{width:8px;height:8px;background:var(--accent2);border-radius:50%;flex-shrink:0;animation:pulse 2s infinite;}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.5;transform:scale(.82);}}
+    .hero-title{margin-bottom:22px;}
+    .hero-mark{position:relative;display:inline;}
+    .hero-mark::after{content:'';position:absolute;bottom:3px;left:0;right:0;height:9px;background:var(--accent1);opacity:.45;z-index:-1;border-radius:4px;}
+    .hero-sub{font-size:1.05rem;color:var(--text-sec);max-width:480px;margin-bottom:32px;}
+    .hero-cta-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:40px;}
+    .hero-stats{display:flex;gap:32px;flex-wrap:wrap;}
+    .hstat-num{font-size:1.55rem;font-weight:700;line-height:1;}
+    .hstat-desc{font-size:.72rem;color:var(--text-sec);margin-top:4px;}
+
+    /* Hero right */
+    .hero-right{display:flex;flex-direction:column;gap:16px;}
+    .hero-photo{width:100%;aspect-ratio:3/3.5;border-radius:20px;overflow:hidden;position:relative;background:#e8e7e0;}
+    .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;}
+    .photo-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;border:2px dashed rgba(0,0,0,.15);border-radius:18px;color:var(--text-sec);font-size:.8rem;text-align:center;padding:20px;}
+    .photo-placeholder-icon{font-size:2rem;opacity:.4;}
+    .photo-placeholder code{font-size:.68rem;background:rgba(0,0,0,.06);padding:2px 8px;border-radius:4px;color:var(--text);}
+
+    /* Hero card */
+    .hero-card{background:var(--white);border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.12);padding:24px;position:relative;}
+    .hcard-badge{position:absolute;top:-12px;right:20px;background:var(--accent2);color:var(--white);font-size:.7rem;font-weight:700;padding:4px 12px;border-radius:100px;}
+    .hcard-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-sec);margin-bottom:14px;}
+    .hcard-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid rgba(0,0,0,.06);}
+    .hcard-row:last-of-type{border-bottom:none;}
+    .hcard-row-label{font-size:.8rem;color:var(--text-sec);}
+    .hcard-before{font-size:.8rem;color:var(--accent2);font-weight:700;text-decoration:line-through;margin-right:6px;}
+    .hcard-after{font-size:.9rem;font-weight:700;color:var(--text);}
+    .hcard-highlight{margin-top:16px;padding:14px;background:rgba(157,247,255,.15);border-radius:var(--radius-sm);border-left:3px solid var(--accent1);}
+    .hcard-highlight-label{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-sec);margin-bottom:5px;}
+    .hcard-highlight-val{font-size:1.4rem;font-weight:700;}
+    .hcard-highlight-note{font-size:.68rem;color:var(--text-sec);margin-top:3px;}
+
+    /* === YANDEX SEARCH ANIMATION === */
+    .ysearch-wrap{background:var(--white);border-radius:20px;box-shadow:0 12px 48px rgba(0,0,0,.12);padding:20px;position:relative;overflow:hidden;}
+    .ysearch-bar{display:flex;align-items:center;gap:10px;background:#F5F5F5;border-radius:10px;padding:12px 16px;margin-bottom:16px;font-size:.95rem;}
+    .ysearch-logo{width:28px;height:28px;background:#FC3F1D;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:.85rem;flex-shrink:0;}
+    .ysearch-query{font-weight:600;color:var(--text);flex:1;}
+    .ysearch-cursor{color:var(--accent2);font-weight:300;animation:blink .8s step-end infinite;}
+    @keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
+    .ysearch-results{display:flex;flex-direction:column;gap:10px;}
+    .ysearch-result{padding:12px 14px;border-radius:10px;transition:all .3s;}
+    .ysearch-result--ad{border:1px solid rgba(0,0,0,.07);}
+    .ysearch-result--highlight{border-color:var(--accent1);background:rgba(157,247,255,.1);box-shadow:0 0 0 2px rgba(157,247,255,.4);transform:scale(1.01);}
+    .ysearch-result--grey{opacity:.45;}
+    .ysearch-ad-label{font-size:.62rem;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;}
+    .ysearch-title{font-size:.9rem;font-weight:700;color:#00439C;margin-bottom:2px;}
+    .ysearch-url{font-size:.72rem;color:#22863A;margin-bottom:4px;}
+    .ysearch-desc{font-size:.78rem;color:var(--text-sec);line-height:1.5;margin-bottom:4px;}
+    .ysearch-contacts{font-size:.72rem;color:var(--text-sec);}
+    .ysearch-title-grey{font-size:.85rem;font-weight:600;color:#00439C;margin-bottom:2px;}
+    .ysearch-url-grey{font-size:.72rem;color:#22863A;}
+    /* Notification popup */
+    .ysearch-notif{position:absolute;bottom:16px;right:16px;display:flex;align-items:center;gap:8px;background:var(--text);color:#fff;border-radius:10px;padding:9px 14px;font-size:.78rem;font-weight:700;opacity:0;transform:translateY(12px);transition:all .4s ease;white-space:nowrap;}
+    .ysearch-notif.visible{opacity:1;transform:translateY(0);}
+    .ysearch-notif-dot{width:8px;height:8px;border-radius:50%;background:#22C55E;flex-shrink:0;}
+
+    /* === ABOUT BLOCK === */
+    .about-layout{display:grid;grid-template-columns:340px 1fr;gap:48px;align-items:start;}
+    .about-photo-wrap{display:flex;flex-direction:column;gap:20px;}
+    .about-photo{width:100%;aspect-ratio:3/4;border-radius:20px;overflow:hidden;background:#e8e7e0;}
+    .about-stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+    .about-stat{background:var(--bg);border-radius:var(--radius-sm);padding:12px;text-align:center;}
+    .about-stat-num{font-size:1.2rem;font-weight:700;line-height:1;}
+    .about-stat-desc{font-size:.66rem;color:var(--text-sec);margin-top:4px;}
+    .about-content{padding-top:4px;}
+    .about-text{font-size:.9rem;color:var(--text-sec);margin-bottom:14px;line-height:1.75;}
+    .about-badges{display:flex;flex-direction:column;gap:8px;margin-top:20px;}
+    .about-badge-item{display:flex;align-items:center;gap:8px;font-size:.84rem;font-weight:600;background:rgba(157,247,255,.15);border-radius:var(--radius-sm);padding:10px 14px;}
+
+    /* Compact hero card */
+    .hero-card-compact{box-shadow:0 8px 32px rgba(0,0,0,.1);}
+    .hcard-rows-compact{display:grid;grid-template-columns:1fr 1fr;gap:0;}
+    .hcard-row-c{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(0,0,0,.06);font-size:.8rem;gap:8px;}
+    .hcard-row-c:nth-child(odd){padding-right:16px;border-right:1px solid rgba(0,0,0,.06);}
+    .hcard-row-c:nth-child(even){padding-left:16px;}
+    .hcard-row-c .hcard-row-label{color:var(--text-sec);font-size:.75rem;white-space:nowrap;}
+    /* Hero layout: photo column smaller */
+    .hero-layout{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+    .features-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:40px;}
+    .feature-card{background:var(--white);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;}
+    .feature-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);}
+    .feature-icon{font-size:1.5rem;margin-bottom:14px;display:block;}
+    .feature-card h3{font-size:.95rem;margin-bottom:8px;}
+    .feature-card p{font-size:.85rem;color:var(--text-sec);line-height:1.65;}
+    .feature-tag{display:inline-block;margin-top:12px;font-size:.68rem;font-weight:700;background:var(--accent1);color:var(--text);padding:3px 10px;border-radius:100px;}
+
+    /* === QUIZ === */
+    .quiz-section{background:var(--bg);padding:72px 0;border-top:1px solid rgba(0,0,0,.06);border-bottom:1px solid rgba(0,0,0,.06);}
+    .quiz-label{color:var(--text-sec);font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:10px;}
+    .quiz-headline{color:var(--text);font-size:clamp(1.3rem,2.5vw,1.75rem);font-weight:700;margin-bottom:32px;max-width:640px;}
+    .quiz-box{background:var(--white);border-radius:24px;max-width:580px;margin:0 auto;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.1);}
+    .quiz-progress-bar-wrap{height:4px;background:rgba(0,0,0,.08);position:relative;}
+    .quiz-progress-fill{height:100%;background:linear-gradient(90deg,var(--accent1),var(--accent2));transition:width .4s ease;border-radius:0 2px 2px 0;}
+    /* Fixed height so page doesn't jump */
+    .quiz-inner{padding:32px 32px 28px;min-height:460px;display:flex;flex-direction:column;}
+    .quiz-step-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--text-sec);margin-bottom:10px;}
+    .quiz-question{font-size:1.1rem;font-weight:700;margin-bottom:20px;line-height:1.35;}
+    .quiz-step{display:none;flex-direction:column;flex:1;}
+    .quiz-step.active{display:flex;animation:quizIn .25s ease;}
+    /* Hide emoji on desktop (not in quiz) */
+    @media(min-width:768px){
+      .feature-icon{display:none !important;}
+      .emoji-d{display:none !important;}
+    }
+    /* Text highlight marker */
+    .text-mark{background:var(--accent1);padding:1px 4px;border-radius:4px;font-weight:700;}
+    .text-mark-coral{background:var(--accent2);padding:1px 4px;border-radius:4px;font-weight:700;}
+    /* Author badge overlaid on photo */
+    .author-photo-badge{position:absolute;bottom:100px;left:16px;right:16px;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-radius:12px;padding:10px 14px;box-shadow:0 4px 20px rgba(0,0,0,.15);z-index:3;}
+    .author-photo-avatar{width:36px;height:36px;border-radius:50%;background:var(--accent1);display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;color:var(--text);flex-shrink:0;}
+    .author-badge-name{font-size:.82rem;font-weight:700;color:var(--text);}
+    .author-badge-role{font-size:.68rem;color:var(--text-sec);line-height:1.35;}
+
+    /* === DOT GRID BACKGROUND === */
+    .dot-grid-bg{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0;}
+    .dot-grid-canvas{position:absolute;inset:0;width:100%;height:100%;}
+    /* Glow spheres */
+    .glow-sphere{position:absolute;border-radius:50%;filter:blur(80px);opacity:.38;pointer-events:none;animation:sphereDrift 18s ease-in-out infinite;}
+    .glow-sphere-1{width:480px;height:480px;background:var(--accent1);top:-100px;right:-80px;animation-delay:0s;}
+    .glow-sphere-2{width:500px;height:500px;background:var(--accent2);bottom:-200px;left:-80px;animation-duration:22s;animation-delay:-8s;}
+    @keyframes sphereDrift{0%,100%{transform:translate(0,0);}33%{transform:translate(30px,-40px);}66%{transform:translate(-20px,25px);}}
+
+    /* Floating popup badges */
+    .hero-popup{position:absolute;display:flex;align-items:center;gap:8px;background:var(--white);border-radius:10px;padding:8px 14px;box-shadow:0 6px 24px rgba(0,0,0,.13);font-size:.78rem;font-weight:700;white-space:nowrap;animation:popFloat 4s ease-in-out infinite;}
+    .hero-popup-dot{width:8px;height:8px;border-radius:50%;background:#22C55E;flex-shrink:0;}
+    .hero-popup-1{top:22%;left:2%;animation-delay:0s;}
+    .hero-popup-2{top:48%;left:1%;animation-delay:1.4s;}
+    .hero-popup-3{top:70%;left:3%;animation-delay:2.8s;}
+    /* Author popup right */
+    .hero-popup-author{top:30%;right:2%;animation-delay:0.7s;gap:10px;}
+    @keyframes popFloat{0%,100%{transform:translateY(0);opacity:.9;}50%{transform:translateY(-8px);opacity:1;}}
+    /* Coral glow sphere — inside hero, bleeds into block 2 via overflow:visible */
+    .glow-sphere-coral{position:absolute;width:600px;height:600px;border-radius:50%;filter:blur(100px);opacity:.25;pointer-events:none;background:var(--accent2);bottom:-260px;left:-120px;z-index:0;animation:sphereDrift 22s ease-in-out infinite;animation-delay:-8s;}
+
+    /* === FLOATING SEARCH QUERIES (block 4) === */
+    .search-queries-bg{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0;}
+    .sq{position:absolute;font-size:.72rem;font-weight:600;color:var(--text-sec);background:rgba(255,255,255,.7);border:1px solid rgba(0,0,0,.07);border-radius:100px;padding:5px 14px;white-space:nowrap;animation:sqFloat linear infinite;opacity:0;}
+    @keyframes sqFloat{0%{opacity:0;transform:translateY(0);}10%{opacity:.7;}80%{opacity:.5;}100%{opacity:0;transform:translateY(-120px);}}
+
+
+    /* Quiz niche selector */
+    .quiz-select-trigger{width:100%;padding:14px 18px;border:2px solid rgba(0,0,0,.1);border-radius:var(--radius-sm);background:var(--white);font-family:var(--font);font-size:.95rem;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:border-color .2s;color:var(--text-sec);}
+    .quiz-select-trigger.selected-val{color:var(--text);border-color:var(--accent1);}
+    .quiz-select-trigger:hover{border-color:var(--accent1);}
+    .quiz-select-arrow{font-size:.7rem;transition:transform .2s;}
+    .quiz-select-arrow.open{transform:rotate(180deg);}
+    .quiz-dropdown{margin-top:8px;display:none;flex-direction:column;gap:6px;}
+    .quiz-dropdown.open{display:flex;animation:quizIn .2s ease;}
+    /* Step3 grid 2+2+1 */
+    .quiz-presence-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+    .quiz-presence-grid .quiz-option:last-child{grid-column:1/-1;}
+    .quiz-option{display:flex;align-items:center;gap:10px;padding:12px 14px;border:2px solid rgba(0,0,0,.09);border-radius:var(--radius-sm);cursor:pointer;font-size:.88rem;font-weight:600;color:var(--text);background:var(--white);transition:border-color .15s,background .15s;user-select:none;text-align:left;}
+    /* Step nav always at bottom */
+    .quiz-nav-bottom{margin-top:auto;padding-top:16px;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+    .quiz-options{display:flex;flex-direction:column;gap:8px;}
+    .quiz-option{display:flex;align-items:center;gap:12px;padding:13px 16px;border:2px solid rgba(0,0,0,.09);border-radius:var(--radius-sm);cursor:pointer;font-size:.9rem;font-weight:600;color:var(--text);background:var(--white);transition:border-color .15s,background .15s,transform .1s;user-select:none;}
+    .quiz-option:hover{border-color:var(--accent1);background:rgba(157,247,255,.08);}
+    .quiz-option.selected{border-color:var(--accent1);background:rgba(157,247,255,.22);}
+    .quiz-option.selected .qo-check{border-color:var(--accent1);background:var(--accent1);}
+    .quiz-option.selected .qo-check::after{opacity:1;}
+    .qo-check{width:20px;height:20px;border-radius:50%;border:2px solid rgba(0,0,0,.15);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .15s;position:relative;}
+    .qo-check::after{content:'✓';font-size:.7rem;font-weight:900;color:var(--text);opacity:0;transition:opacity .15s;}
+    .qo-icon{font-size:1.1rem;flex-shrink:0;}
+    .quiz-option-text{flex:1;line-height:1.35;}
+    .quiz-checkbox .qo-check{border-radius:5px;}
+    .quiz-other-wrap{margin-top:10px;display:none;}
+    .quiz-other-wrap.visible{display:block;animation:quizIn .2s ease;}
+    .quiz-other-input{width:100%;padding:12px 16px;border:2px solid var(--accent1);border-radius:var(--radius-sm);font-family:var(--font);font-size:.9rem;font-weight:500;color:var(--text);background:rgba(157,247,255,.08);outline:none;}
+    .quiz-text-input{width:100%;padding:14px 18px;border:2px solid rgba(0,0,0,.1);border-radius:var(--radius-sm);font-family:var(--font);font-size:1rem;font-weight:500;color:var(--text);outline:none;transition:border-color .2s;background:var(--white);}
+    .quiz-text-input:focus{border-color:var(--accent1);}
+    .quiz-text-hint{font-size:.75rem;color:var(--text-sec);margin-top:7px;}
+    .quiz-nav{margin-top:18px;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+    .quiz-nav-btn{padding:13px 28px;border-radius:var(--radius-sm);font-family:var(--font);font-weight:700;font-size:.9rem;cursor:pointer;border:none;background:var(--accent1);color:var(--text);transition:transform .15s,box-shadow .15s;}
+    .quiz-nav-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(157,247,255,.5);}
+    .quiz-nav-btn:disabled{opacity:.4;cursor:default;transform:none;box-shadow:none;}
+    .quiz-back-btn{background:none;border:none;font-family:var(--font);font-size:.82rem;font-weight:600;color:var(--text-sec);cursor:pointer;padding:4px 0;transition:color .2s;}
+    .quiz-back-btn:hover{color:var(--text);}
+    /* Step 5 contacts */
+    .quiz-channel-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:18px;}
+    .quiz-channel-option{display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;border:2px solid rgba(0,0,0,.09);border-radius:var(--radius-sm);cursor:pointer;font-size:.82rem;font-weight:600;text-align:center;transition:all .15s;background:var(--white);}
+    .quiz-channel-option:hover{border-color:var(--accent1);background:rgba(157,247,255,.08);}
+    .quiz-channel-option.selected{border-color:var(--accent1);background:rgba(157,247,255,.22);}
+    .quiz-channel-icon{font-size:1.4rem;}
+    .quiz-field{margin-bottom:12px;}
+    .quiz-field label{display:block;font-size:.75rem;font-weight:700;color:var(--text-sec);margin-bottom:6px;text-transform:uppercase;letter-spacing:.06em;}
+    /* Success */
+    .quiz-success{display:none;text-align:center;padding:40px 32px;}
+    .quiz-success.visible{display:block;}
+    .quiz-success-icon{font-size:3rem;margin-bottom:16px;}
+    .quiz-success h3{font-size:1.3rem;font-weight:700;margin-bottom:10px;}
+    .quiz-success p{font-size:.9rem;color:var(--text-sec);margin-bottom:22px;}
+
+    /* === MICRO JOBS === */
+    .jobs-list{display:flex;flex-direction:column;gap:14px;margin-top:32px;}
+    .job-item{display:flex;gap:18px;align-items:flex-start;background:var(--bg);border-radius:var(--radius);padding:22px 24px;transition:transform .2s;}
+    .job-item:hover{transform:translateX(5px);}
+    .job-num{flex-shrink:0;width:36px;height:36px;background:var(--accent1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;}
+    .job-item h3{font-size:.95rem;margin-bottom:5px;}
+    .job-item p{font-size:.85rem;color:var(--text-sec);}
+
+    /* === AHA / ROI CALC === */
+    .aha-layout{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+    .aha-checklist{list-style:none;display:flex;flex-direction:column;gap:14px;margin:22px 0 28px;}
+    .aha-checklist li{display:flex;gap:12px;align-items:flex-start;font-size:.95rem;}
+    .check-dot{flex-shrink:0;width:22px;height:22px;background:var(--accent1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:900;margin-top:2px;}
+    .no-oblig{font-size:.78rem;color:var(--text-sec);margin-top:12px;}
+    .roi-calc{background:var(--white);border-radius:20px;box-shadow:0 10px 44px rgba(0,0,0,.1);padding:28px;}
+    .roi-calc-title{font-size:.95rem;font-weight:700;display:flex;align-items:center;gap:10px;margin-bottom:20px;}
+    .roi-badge{font-size:.65rem;font-weight:700;background:var(--accent1);padding:3px 9px;border-radius:100px;}
+    .calc-field{margin-bottom:16px;}
+    .calc-field label{display:flex;justify-content:space-between;font-size:.78rem;font-weight:600;color:var(--text-sec);margin-bottom:7px;}
+    .calc-field label span{font-weight:700;color:var(--text);}
+    input[type="range"]{-webkit-appearance:none;width:100%;height:4px;border-radius:2px;outline:none;cursor:pointer;background:linear-gradient(to right,var(--accent1) 0%,var(--accent1) var(--fill,15%),#DEDDD6 var(--fill,15%));}
+    input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--text);cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.22);}
+    .calc-results{margin-top:18px;padding:16px;background:var(--bg);border-radius:var(--radius-sm);}
+    .calc-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;font-size:.83rem;}
+    .calc-row:not(:last-child){border-bottom:1px solid rgba(0,0,0,.06);}
+    .calc-row-label{color:var(--text-sec);}
+    .calc-row-val{font-weight:700;}
+    .calc-row-val.green{color:#22C55E;}
+    .calc-delta{margin-top:14px;padding:13px 16px;background:linear-gradient(135deg,rgba(157,247,255,.25),rgba(157,247,255,.08));border-left:3px solid var(--accent1);border-radius:0 var(--radius-sm) var(--radius-sm) 0;}
+    .calc-delta-label{font-size:.7rem;color:var(--text-sec);margin-bottom:4px;}
+    .calc-delta-val{font-size:1.3rem;font-weight:700;}
+    .calc-delta-year{font-size:.72rem;color:var(--text-sec);margin-top:3px;}
+
+    /* === CASES === */
+    .cases-tabs{display:flex;gap:8px;margin-bottom:22px;flex-wrap:wrap;}
+    .case-tab{padding:8px 18px;border-radius:100px;border:2px solid rgba(0,0,0,.1);background:transparent;font-family:var(--font);font-size:.82rem;font-weight:700;cursor:pointer;color:var(--text-sec);transition:all .2s;}
+    .case-tab.active{background:var(--text);color:var(--white);border-color:var(--text);}
+    .case-tab:hover:not(.active){border-color:var(--text);color:var(--text);}
+    .case-panel{display:none;animation:fadeUp .3s ease;}
+    .case-panel.active{display:block;}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+    .case-company{font-size:.83rem;font-weight:700;color:var(--text-sec);margin-bottom:14px;}
+    .case-cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+    .case-col{background:var(--bg);border-radius:var(--radius-sm);padding:20px;}
+    .case-col-label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;}
+    .case-col-label.before{color:var(--accent2);}
+    .case-col-label.after{color:#22C55E;}
+    .case-col ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
+    .case-col ul li{font-size:.85rem;display:flex;gap:8px;align-items:flex-start;}
+    .case-col.before ul li::before{content:'✕';color:var(--accent2);font-weight:700;flex-shrink:0;}
+    .case-col.after ul li::before{content:'✓';color:#22C55E;font-weight:700;flex-shrink:0;}
+    .case-quote{margin-top:18px;padding:16px 20px;border-left:3px solid var(--accent1);background:rgba(157,247,255,.08);border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-style:italic;font-size:.88rem;color:var(--text-sec);line-height:1.7;}
+
+    /* === VALUE BLOCK 6 === */
+    .value-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:40px;}
+    .value-card{background:var(--white);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);border-top:3px solid transparent;transition:transform .2s,box-shadow .2s;}
+    .value-card:nth-child(1){border-top-color:var(--accent1);}
+    .value-card:nth-child(2){border-top-color:var(--accent2);}
+    .value-card:nth-child(3){border-top-color:#A8E6CF;}
+    .value-card:nth-child(4){border-top-color:#FFD93D;}
+    .value-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);}
+    .value-card-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-sec);margin-bottom:10px;}
+    .value-card h3{font-size:.95rem;margin-bottom:7px;}
+    .value-card p{font-size:.84rem;color:var(--text-sec);}
+    .trust-block{margin-top:48px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;background:var(--white);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);}
+    .stars{color:#F5A623;font-size:1.1rem;margin-bottom:10px;}
+    .review-text{font-style:italic;font-size:.92rem;line-height:1.75;margin-bottom:10px;}
+    .review-author{font-size:.78rem;font-weight:700;color:var(--text-sec);}
+    .trust-stats{display:flex;flex-direction:column;gap:20px;min-width:160px;}
+    .tstat{text-align:right;}
+    .tstat-num{font-size:1.6rem;font-weight:700;line-height:1;}
+    .tstat-desc{font-size:.72rem;color:var(--text-sec);margin-top:3px;}
+
+    /* === RECOGNITION / CHECKBOXES BLOCK 7 === */
+    .rec-list{display:flex;flex-direction:column;gap:10px;margin-top:30px;}
+    .rec-checkbox{display:flex;gap:14px;align-items:center;padding:15px 20px;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);border-radius:var(--radius-sm);cursor:pointer;transition:all .2s;user-select:none;}
+    .rec-checkbox:hover{background:rgba(255,255,255,.1);}
+    .rec-checkbox.checked{background:rgba(157,247,255,.1);border-color:rgba(157,247,255,.35);}
+    .rec-cb-box{flex-shrink:0;width:22px;height:22px;border:2px solid rgba(255,255,255,.25);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:900;color:var(--text);transition:all .2s;}
+    .rec-checkbox.checked .rec-cb-box{background:var(--accent1);border-color:var(--accent1);}
+    .rec-cb-text{font-size:.88rem;color:rgba(255,255,255,.82);line-height:1.45;text-align:left;}
+    .rec-emotion{margin-top:36px;padding:28px 32px;background:rgba(157,247,255,.07);border:1px solid rgba(157,247,255,.18);border-radius:var(--radius);}
+    .rec-emotion p{font-size:.92rem;color:rgba(255,255,255,.68);}
+    .rec-emotion p strong{color:var(--white);}
+    .rec-counter{margin-top:16px;font-size:.82rem;color:rgba(157,247,255,.9);font-weight:700;display:none;}
+    .rec-counter.visible{display:block;}
+
+    /* === STEPS BLOCK 8 === */
+    .steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:48px;position:relative;}
+    .steps-grid::before{content:'';position:absolute;top:27px;left:12%;right:12%;height:2px;background:linear-gradient(90deg,var(--accent1),var(--accent2));z-index:0;}
+    .step{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 10px;position:relative;z-index:1;}
+    .step-num{width:54px;height:54px;border-radius:50%;background:var(--white);border:3px solid var(--accent1);display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;margin-bottom:16px;box-shadow:0 4px 16px rgba(157,247,255,.38);}
+    .step-time{font-size:.67rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--accent2);margin-bottom:6px;}
+    .step h3{font-size:.9rem;margin-bottom:6px;}
+    .step p{font-size:.78rem;color:var(--text-sec);flex:1;}
+    .step-result{margin-top:12px;padding:7px 12px;background:rgba(157,247,255,.14);border-radius:var(--radius-sm);font-size:.72rem;font-weight:700;width:100%;}
+
+    /* === POINT B + IPHONE BLOCK 9 === */
+    .pb-layout{display:grid;grid-template-columns:1fr 300px;gap:56px;align-items:start;}
+    /* Hide emotions on desktop */
+    @media(min-width:768px){.pb-emotions{display:none !important;}}
+    .pb-emotions{display:flex;flex-direction:column;gap:16px;margin-top:30px;}
+    .pb-emotion{display:flex;gap:14px;align-items:flex-start;}
+    .pb-emoji{font-size:1.4rem;flex-shrink:0;}
+    .pb-emotion h3{font-size:.92rem;margin-bottom:3px;}
+    .pb-emotion p{font-size:.83rem;color:var(--text-sec);}
+    .pb-story{background:var(--white);border-radius:20px;box-shadow:var(--shadow);padding:30px;position:relative;overflow:hidden;margin-top:28px;}
+    .pb-story::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--accent1),var(--accent2));}
+    .pb-story-time{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-sec);margin-bottom:12px;}
+    .pb-story-text{font-size:.95rem;line-height:1.85;}
+    /* iPhone mockup */
+    .iphone-wrap{width:260px;height:530px;background:linear-gradient(150deg,#2E2E2E 0%,#1A1A1A 100%);border-radius:46px;padding:12px 12px 16px;box-shadow:0 30px 80px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.08),0 0 0 2px #3A3A3A;position:relative;flex-shrink:0;margin:0 auto;}
+    .iphone-btn{position:absolute;right:-3px;top:110px;width:3px;height:28px;background:#3A3A3A;border-radius:0 2px 2px 0;}
+    .iphone-btn2{top:148px;}
+    .iphone-vol1{position:absolute;left:-3px;top:110px;width:3px;height:20px;background:#3A3A3A;border-radius:2px 0 0 2px;}
+    .iphone-vol2{top:138px;}
+    .iphone-screen{width:100%;height:100%;border-radius:36px;background:#F2F2F7;overflow:hidden;position:relative;}
+    .iphone-island{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:88px;height:24px;background:#1A1A1A;border-radius:12px;z-index:10;}
+    .iphone-status{position:absolute;top:0;left:0;right:0;height:50px;background:#F2F2F7;z-index:9;display:flex;align-items:flex-end;padding:0 18px 8px;justify-content:space-between;}
+    .iphone-time{font-size:.6rem;font-weight:700;color:#1A1A1A;}
+    .iphone-icons{font-size:.55rem;}
+    .notif-header{padding:52px 14px 10px;font-size:.6rem;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.06em;}
+    .notif-scroll{height:calc(100% - 80px);overflow:hidden;position:relative;}
+    .notif-track{display:flex;flex-direction:column;gap:7px;padding:0 10px;animation:scrollNotifs 10s linear infinite;}
+    .notif-track:hover{animation-play-state:paused;}
+    @keyframes scrollNotifs{0%{transform:translateY(0);}100%{transform:translateY(-50%);}}
+    .notif-card{background:var(--white);border-radius:13px;padding:10px 12px;box-shadow:0 1px 6px rgba(0,0,0,.08);flex-shrink:0;}
+    .notif-card-header{display:flex;align-items:center;gap:7px;margin-bottom:4px;}
+    .notif-app-icon{width:18px;height:18px;border-radius:5px;background:linear-gradient(135deg,#25D366,#128C7E);display:flex;align-items:center;justify-content:center;font-size:.6rem;flex-shrink:0;}
+    .notif-app-name{font-size:.58rem;font-weight:700;color:#888;flex:1;}
+    .notif-time{font-size:.55rem;color:#aaa;}
+    .notif-title{font-size:.68rem;font-weight:700;color:#1A1A1A;margin-bottom:2px;}
+    .notif-body{font-size:.62rem;color:#555;line-height:1.35;}
+
+    /* === FAQ === */
+    .faq-list{display:flex;flex-direction:column;gap:10px;margin-top:38px;}
+    .faq-item{background:var(--bg);border-radius:var(--radius);overflow:hidden;border:1px solid rgba(0,0,0,.06);transition:box-shadow .2s;}
+    .faq-item:hover{box-shadow:var(--shadow);}
+    .faq-trigger{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 26px;background:none;border:none;font-family:var(--font);font-size:.92rem;font-weight:700;color:var(--text);cursor:pointer;text-align:left;}
+    .faq-icon{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(0,0,0,.06);display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:700;color:var(--text-sec);transition:transform .3s,background .2s;}
+    .faq-item.open .faq-icon{transform:rotate(45deg);background:var(--accent1);color:var(--text);}
+    .faq-body{max-height:0;overflow:hidden;transition:max-height .38s ease;}
+    .faq-body-inner{padding:0 26px 20px;font-size:.88rem;color:var(--text-sec);line-height:1.75;}
+
+    /* === COMPARISON TABLE === */
+    .comp-filter{display:flex;align-items:center;gap:12px;margin-bottom:22px;flex-wrap:wrap;}
+    .comp-filter-label{font-size:.8rem;color:var(--text-sec);font-weight:600;}
+    .comp-toggle{display:flex;align-items:center;gap:7px;font-size:.8rem;font-weight:600;cursor:pointer;color:var(--text-sec);}
+    .comp-toggle input[type="checkbox"]{width:15px;height:15px;accent-color:var(--accent1);cursor:pointer;}
+    .table-wrap{overflow-x:auto;border-radius:var(--radius);box-shadow:var(--shadow);}
+    .comp-table{width:100%;border-collapse:collapse;font-size:.85rem;min-width:560px;}
+    .comp-table th{padding:14px 18px;text-align:left;font-weight:700;background:var(--bg);border-bottom:2px solid rgba(0,0,0,.06);}
+    .comp-table th.col-us{background:var(--accent1);}
+    .comp-table td{padding:14px 18px;border-bottom:1px solid rgba(0,0,0,.05);color:var(--text-sec);vertical-align:top;}
+    .comp-table td:first-child{font-weight:700;color:var(--text);}
+    .comp-table td.col-us{color:var(--text);font-weight:700;background:rgba(157,247,255,.07);}
+    .comp-table tr:hover td{background:rgba(0,0,0,.02);}
+    .comp-table tr:hover td.col-us{background:rgba(157,247,255,.13);}
+    .comp-table tr.key-row td:first-child::after{content:' ★';color:var(--accent2);}
+
+    /* === FINAL CTA === */
+    .final-cta-section{text-align:center;}
+    .final-cta-section h2{color:var(--white);font-size:clamp(1.7rem,3.5vw,2.5rem);}
+    .final-bullets{display:flex;flex-direction:column;gap:10px;margin:30px auto;max-width:420px;text-align:left;}
+    .fbullet{display:flex;align-items:center;gap:12px;font-size:.92rem;color:rgba(255,255,255,.82);}
+    .fbullet-dot{width:8px;height:8px;border-radius:50%;background:var(--accent1);flex-shrink:0;}
+    .urgency{margin-top:22px;font-size:.82rem;color:rgba(255,255,255,.45);}
+    .urgency strong{color:var(--accent2);}
+
+    /* === FOOTER === */
+    .site-footer{padding:36px 0;border-top:1px solid rgba(0,0,0,.07);}
+    .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
+    .footer-note{font-size:.78rem;color:var(--text-sec);margin-top:4px;}
+    .footer-links{display:flex;gap:20px;}
+    .footer-links a{font-size:.78rem;color:var(--text-sec);text-decoration:none;transition:color .2s;}
+    .footer-links a:hover{color:var(--text);}
+
+    /* === RESPONSIVE === */
+    /* === TABLET === */
+    @media(max-width:1023px){
+      .hero-layout{grid-template-columns:1fr;}
+      .hero-right{display:none;}
+      .steps-grid{grid-template-columns:repeat(2,1fr);gap:24px;}
+      .steps-grid::before{display:none;}
+      .pb-layout{grid-template-columns:1fr;}
+      .aha-layout{grid-template-columns:1fr;}
+      .about-layout{grid-template-columns:280px 1fr;gap:32px;}
+      .hcard-rows-compact{grid-template-columns:1fr;}
+      .hcard-row-c{padding-right:0 !important;border-right:none !important;padding-left:0 !important;}
+    }
+
+    /* === MOBILE === */
+    @media(max-width:767px){
+      /* Layout & spacing */
+      .container{padding:0 16px;}
+      .section{padding:52px 0;}
+      .section-hero{padding-top:80px;}
+
+      /* Typography */
+      h1{font-size:1.75rem;}
+      h2{font-size:1.35rem;}
+
+      /* Header */
+      .nav{display:none;}
+      .header-cta{display:none;}
+      .header-inner{padding:12px 16px;}
+
+      /* Hero */
+      .hero-layout{grid-template-columns:1fr;}
+      .hero-right{display:none;}
+      .hero-badge{font-size:.7rem;}
+      .hero-sub{font-size:.92rem;}
+      .hero-cta-row{flex-direction:column;align-items:stretch;}
+      .btn-lg{padding:16px 20px;font-size:.95rem;text-align:center;}
+      .hero-stats{gap:20px;flex-wrap:wrap;}
+      .hstat-num{font-size:1.3rem;}
+      /* Show compact card on mobile full-width */
+      .hero-card-compact{margin-top:24px;}
+      .hcard-rows-compact{grid-template-columns:1fr;}
+      .hcard-row-c{padding-right:0 !important;border-right:none !important;padding-left:0 !important;}
+
+      /* Hide popups on mobile */
+      .hero-popup{display:none;}
+
+      /* Glow spheres — keep but smaller */
+      .glow-sphere-1{width:280px;height:280px;}
+      .glow-sphere-coral{width:320px;height:320px;}
+
+      /* Features grid */
+      .features-grid{grid-template-columns:1fr;}
+      .feature-card{padding:20px;}
+
+      /* Quiz */
+      .quiz-section{padding:48px 0;}
+      .quiz-inner{padding:22px 18px 18px;min-height:400px;}
+      .quiz-headline{font-size:1.2rem;}
+      .quiz-channel-grid{grid-template-columns:1fr 1fr;}
+      .quiz-presence-grid{grid-template-columns:1fr;}
+      .quiz-presence-grid .quiz-option:last-child{grid-column:1;}
+
+      /* Cases */
+      .cases-tabs{gap:6px;}
+      .case-tab{padding:7px 14px;font-size:.76rem;}
+      .case-cols{grid-template-columns:1fr;}
+
+      /* Value */
+      .value-grid{grid-template-columns:1fr;}
+      .trust-block{grid-template-columns:1fr;}
+      .trust-stats{flex-direction:row;flex-wrap:wrap;gap:16px;}
+      .tstat{text-align:left;}
+
+      /* Steps */
+      .steps-grid{grid-template-columns:1fr;gap:28px;}
+      .steps-grid::before{display:none;}
+      .step{flex-direction:row;text-align:left;align-items:flex-start;gap:16px;}
+      .step-num{flex-shrink:0;margin-bottom:0;}
+
+      /* Point B / iPhone */
+      .pb-layout{grid-template-columns:1fr;}
+      .iphone-wrap{width:200px;height:408px;border-radius:36px;margin:0 auto;}
+      .iphone-island{width:68px;height:19px;}
+      .pb-emotions{display:flex !important;}
+
+      /* FAQ */
+      .faq-trigger{padding:14px 16px;font-size:.88rem;}
+
+      /* Comparison */
+      .table-wrap{border-radius:0;margin:0 -16px;}
+      .comp-table{font-size:.74rem;}
+      .comp-table th,.comp-table td{padding:8px 10px;}
+      .comp-table .col-us{background:rgba(157,247,255,.07);}
+
+      /* ROI calc */
+      .aha-layout{grid-template-columns:1fr;gap:32px;}
+      .roi-calc{padding:20px;}
+
+      /* Search queries on mobile — hide */
+      .search-queries-bg{display:none;}
+
+      /* Dot grid canvas — hide on mobile for perf */
+      #dotGridCanvas{display:none;}
+
+      /* CTA final */
+      .final-cta-inner{flex-direction:column;gap:16px;}
+      .final-bullets{max-width:100%;margin:16px 0 24px;}
+      .fbullet{font-size:.85rem;}
+
+      /* Steps: vertical with number inline */
+      .steps-grid{grid-template-columns:1fr;gap:20px;}
+      .steps-grid::before{display:none;}
+      .step{flex-direction:row;text-align:left;align-items:flex-start;gap:14px;padding:0;}
+      .step-num{flex-shrink:0;width:44px;height:44px;font-size:.95rem;margin-bottom:0;}
+      .step-time{font-size:.62rem;}
+      .step h3{font-size:.88rem;}
+      .step-result{font-size:.68rem;}
+
+      /* Calculator */
+      .roi-calc{padding:18px 16px;}
+      .calc-field label{font-size:.74rem;}
+      .aha-checklist li{font-size:.88rem;}
+
+      /* About block */
+      .about-layout{grid-template-columns:1fr;}
+      .about-photo{aspect-ratio:4/3;max-height:280px;}
+      .about-stats-row{grid-template-columns:repeat(3,1fr);}
+      .about-content{padding-top:0;}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#" class="logo">nazarov<span>.</span>marketing</a>
+      <nav><ul class="nav">
+        <li><a href="#block-2-core-job">Подход</a></li>
+        <li><a href="#block-quiz">Квиз</a></li>
+        <li><a href="#block-5-aha-proof">Кейсы</a></li>
+        <li><a href="#block-8-how-we-work">Процесс</a></li>
+        <li><a href="#block-10-barriers">FAQ</a></li>
+      </ul></nav>
+      <a href="#block-12-final-cta" class="btn btn-primary header-cta">Получить разбор →</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ====== BLOCK 1: HERO ====== -->
+    <section id="block-1-oneliner" class="section section-hero" style="position:relative;overflow:visible;">
+      <!-- Glow spheres -->
+      <div class="glow-sphere glow-sphere-1"></div>
+      <div class="glow-sphere glow-sphere-coral"></div>
+      <!-- Floating popup badges LEFT -->
+      <div class="hero-popup hero-popup-1"><div class="hero-popup-dot"></div>+1 новая заявка</div>
+      <div class="hero-popup hero-popup-2"><div class="hero-popup-dot"></div>+90 заявок за месяц</div>
+      <div class="hero-popup hero-popup-3"><div class="hero-popup-dot"></div>Окупаемость рекламы 257%</div>
+      <!-- Author popup RIGHT -->
+      <div class="hero-popup hero-popup-author">
+        <div class="author-photo-avatar">ЕН</div>
+        <div>
+          <div class="author-badge-name">Егор Назаров</div>
+          <div class="author-badge-role">Маркетолог · владелец агентства · 3+ лет</div>
+        </div>
+      </div>
+      <!-- Dot grid canvas (spans hero→quiz) -->
+      <canvas id="dotGridCanvas" class="dot-grid-canvas" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;"></canvas>
+      <div class="container">
+        <div class="hero-layout">
+          <div>
+            <div class="hero-badge">
+              <div class="badge-dot"></div>
+              Бесплатный разбор — осталось 8 мест в месяц
+            </div>
+            <h1 class="hero-title">
+              Выводим ваш офлайн-бизнес в интернет —
+              <span class="hero-mark">первые заявки за 7–14 дней</span>
+            </h1>
+            <p class="hero-sub">Пока вас нет в Яндексе — ваши клиенты уходят к конкурентам. Мы это исправим быстро, понятно и с гарантией результата.</p>
+            <div class="hero-cta-row">
+              <a href="#block-4-aha" class="btn btn-primary btn-lg">Получить бесплатный разбор →</a>
+            </div>
+            <div class="hero-stats">
+              <div><div class="hstat-num">417</div><div class="hstat-desc">проектов в базе</div></div>
+              <div><div class="hstat-num">7–14 дн.</div><div class="hstat-desc">до первых заявок</div></div>
+              <div><div class="hstat-num">6–9%</div><div class="hstat-desc">конверсия сайта</div></div>
+            </div>
+            <!-- Compact case card under stats -->
+            <div class="hero-card hero-card-compact" style="margin-top:20px;position:relative;">
+              <div class="hcard-badge">Реальный кейс</div>
+              <div class="hcard-label">«Кабинеты Рихтера», коворкинг · Москва</div>
+              <div class="hcard-rows-compact">
+                <div class="hcard-row-c"><span class="hcard-row-label">Заявок в месяц</span><div><span class="hcard-before">5</span><span class="hcard-after">90+</span></div></div>
+                <div class="hcard-row-c"><span class="hcard-row-label">Стоимость заявки</span><div><span class="hcard-before">40 000 ₽</span><span class="hcard-after">656 ₽</span></div></div>
+                <div class="hcard-row-c"><span class="hcard-row-label">Загрузка</span><div><span class="hcard-before">12–15%</span><span class="hcard-after">31%</span></div></div>
+                <div class="hcard-row-c"><span class="hcard-row-label">Бюджет</span><span class="hcard-after">снижен в 2 раза</span></div>
+              </div>
+              <div class="hcard-highlight" style="margin-top:10px;">
+                <div class="hcard-highlight-label">Стоимость заявки снизилась в</div>
+                <div class="hcard-highlight-val">61 раз</div>
+                <div class="hcard-highlight-note">с 40 000 ₽ до 656 ₽</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero right: Yandex search animation -->
+          <div class="hero-right" style="position:relative;">
+            <div class="ysearch-wrap">
+              <div class="ysearch-bar">
+                <span class="ysearch-logo">Я</span>
+                <span class="ysearch-query" id="ytypeText"></span><span class="ysearch-cursor">|</span>
+              </div>
+              <div class="ysearch-results" id="ysearchResults">
+                <div class="ysearch-result ysearch-result--ad ysearch-result--highlight" id="yresult-client">
+                  <div class="ysearch-ad-label">Реклама</div>
+                  <div class="ysearch-title" id="yresult-title">Детейлинг в Москве — от 3 500 ₽</div>
+                  <div class="ysearch-url">detailing-pro.ru</div>
+                  <div class="ysearch-desc">Профессиональный уход за автомобилем. Запись онлайн. Выезд по Москве.</div>
+                  <div class="ysearch-contacts">☎ +7 (916) 472-**-**&nbsp;&nbsp;·&nbsp;&nbsp;Москва</div>
+                </div>
+                <div class="ysearch-result ysearch-result--grey">
+                  <div class="ysearch-title-grey">Автодетейлинг "Блеск" — Москва</div>
+                  <div class="ysearch-url-grey">bleskavto.ru</div>
+                </div>
+                <div class="ysearch-result ysearch-result--grey">
+                  <div class="ysearch-title-grey">Детейлинг Профи — запись онлайн</div>
+                  <div class="ysearch-url-grey">detpro.ru</div>
+                </div>
+              </div>
+              <div class="ysearch-notif" id="ynotif">
+                <div class="ysearch-notif-dot"></div>
+                <span id="ynotif-text">+1 новая заявка</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== BLOCK 2: CORE JOB ====== -->
+    <section id="block-2-core-job" class="section fade-in">
+      <div class="container">
+        <span class="label">Наш подход</span>
+        <h2>Помогаем бизнесу с репутацией получить клиентов из интернета — <span class="text-mark">без хаоса и слива бюджета</span></h2>
+        <span class="accent-line"></span>
+        <p style="max-width:600px;color:var(--text-sec)">Вы годами строили имя на рекомендациях. Теперь рынок перешёл в онлайн, а вас там нет. Мы переводим вашу репутацию в цифру — и делаем это системно, за 7 дней.</p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <span class="feature-icon">🎯</span>
+            <h3>Исследуем аудиторию по методу AJTBD</h3>
+            <p>Находим именно тех, кто уже ищет вас в интернете, и создаём сайт под их запросы. Не шаблон — живой инструмент.</p>
+            <span class="feature-tag">Метод AJTBD</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">📈</span>
+            <h3>Лендинг с конверсией 6–9%</h3>
+            <p>В 3 раза выше среднего по рынку. Из 100 посетителей — 6–9 оставляют заявку. Не «красиво», а продаёт.</p>
+            <span class="feature-tag">В 3× выше рынка</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🔥</span>
+            <h3>Реклама в Яндекс.Директ на горячий спрос</h3>
+            <p>Только те, кто уже хочет купить — никакой «широкой аудитории» и слива бюджета впустую.</p>
+            <span class="feature-tag">Горячий спрос</span>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">📊</span>
+            <h3>Отчётность на понятном языке</h3>
+            <p>Еженедельно: сколько заявок пришло, во сколько обошлась каждая, что делаем дальше. Без терминов.</p>
+            <span class="feature-tag">Каждую неделю</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== QUIZ BLOCK ====== -->
+    <section id="block-quiz" class="quiz-section fade-in">
+      <div class="container">
+        <span class="quiz-label">Бесплатный разбор за 2 минуты</span>
+        <h2 class="quiz-headline">Ответьте на 5 вопросов — получите персональный план выхода в онлайн и расчёт потерянных клиентов</h2>
+
+        <div class="quiz-box" id="quizBox">
+          <div class="quiz-progress-bar-wrap">
+            <div class="quiz-progress-fill" id="quizFill" style="width:20%"></div>
+          </div>
+          <div class="quiz-inner">
+
+            <!-- STEP 1: Ниша -->
+            <div class="quiz-step active" id="qstep-1">
+              <div class="quiz-step-label">Шаг 1 из 5</div>
+              <div class="quiz-question">В какой нише работает ваш бизнес?</div>
+              <input type="text" class="quiz-text-input" id="qniche-text" placeholder="Напишите вашу нишу..." oninput="validateNiche()">
+              <div class="quiz-text-hint">Например: детейлинг, стоматология, детские кружки, ремонт квартир</div>
+              <div class="quiz-nav-bottom">
+                <span></span>
+                <button class="quiz-nav-btn" id="qbtn-1" onclick="nextStep(1)" disabled>Далее →</button>
+              </div>
+            </div>
+
+            <!-- STEP 2: Город -->
+            <div class="quiz-step" id="qstep-2">
+              <div class="quiz-step-label">Шаг 2 из 5</div>
+              <div class="quiz-question">В каком городе вы работаете с клиентами чаще всего?</div>
+              <input type="text" class="quiz-text-input" id="qcity" placeholder="Например: Москва, Нижний Новгород, Тюмень" oninput="validateStep2()">
+              <div class="quiz-text-hint">Это нужно, чтобы показать реальный спрос в вашем городе</div>
+              <div class="quiz-nav-bottom">
+                <button class="quiz-back-btn" onclick="prevStep(2)">← Назад</button>
+                <button class="quiz-nav-btn" id="qbtn-2" onclick="nextStep(2)" disabled>Далее →</button>
+              </div>
+            </div>
+
+            <!-- STEP 3: Онлайн-присутствие -->
+            <div class="quiz-step" id="qstep-3">
+              <div class="quiz-step-label">Шаг 3 из 5</div>
+              <div class="quiz-question">Где ваш бизнес уже представлен в интернете?</div>
+              <div class="quiz-presence-grid" id="qopts-3">
+                <div class="quiz-option quiz-checkbox" onclick="toggleCheckbox(this,'maps')"><span class="qo-icon">📍</span><span class="quiz-option-text">Карты (Яндекс, 2ГИС)</span></div>
+                <div class="quiz-option quiz-checkbox" onclick="toggleCheckbox(this,'site')"><span class="qo-icon">🌐</span><span class="quiz-option-text">Собственный сайт</span></div>
+                <div class="quiz-option quiz-checkbox" onclick="toggleCheckbox(this,'social')"><span class="qo-icon">📱</span><span class="quiz-option-text">VK / Telegram / соцсети</span></div>
+                <div class="quiz-option quiz-checkbox" onclick="toggleCheckbox(this,'marketplace')"><span class="qo-icon">🛒</span><span class="quiz-option-text">Маркетплейсы / агрегаторы</span></div>
+                <div class="quiz-option quiz-checkbox" onclick="toggleCheckbox(this,'nowhere')"><span class="qo-icon">🔍</span><span class="quiz-option-text">Пока нигде нет нормального присутствия</span></div>
+              </div>
+              <div class="quiz-nav-bottom">
+                <button class="quiz-back-btn" onclick="prevStep(3)">← Назад</button>
+                <button class="quiz-nav-btn" id="qbtn-3" onclick="nextStep(3)" disabled>Далее →</button>
+              </div>
+            </div>
+
+            <!-- STEP 4: Цель -->
+            <div class="quiz-step" id="qstep-4">
+              <div class="quiz-step-label">Шаг 4 из 5</div>
+              <div class="quiz-question">Какого результата вы хотите от онлайна в ближайший месяц?</div>
+              <div class="quiz-options" id="qopts-4" style="gap:8px;">
+                <div class="quiz-option quiz-checkbox" onclick="toggleGoal(this,'understand')"><span class="quiz-option-text">Понять, теряю ли я клиентов из-за отсутствия онлайна</span></div>
+                <div class="quiz-option quiz-checkbox" onclick="toggleGoal(this,'leads')"><span class="quiz-option-text">Получить первые 5–10 новых заявок</span></div>
+                <div class="quiz-option quiz-checkbox" onclick="toggleGoal(this,'turnkey')"><span class="quiz-option-text">Найти специалиста, который сделает всё «под ключ»</span></div>
+                <div class="quiz-option quiz-checkbox" onclick="toggleGoal(this,'other',true)"><span class="qo-icon">✏️</span><span class="quiz-option-text">Другое</span></div>
+              </div>
+              <div class="quiz-other-wrap" id="qother-4" style="margin-top:8px;">
+                <input type="text" class="quiz-other-input" id="qother-input-4" placeholder="Опишите вашу цель...">
+              </div>
+              <div class="quiz-nav-bottom">
+                <button class="quiz-back-btn" onclick="prevStep(4)">← Назад</button>
+                <button class="quiz-nav-btn" id="qbtn-4" onclick="nextStep(4)" disabled>Далее →</button>
+              </div>
+            </div>
+
+            <!-- STEP 5: Контакты -->
+            <div class="quiz-step" id="qstep-5">
+              <div class="quiz-step-label">Шаг 5 из 5</div>
+              <div class="quiz-question">Где вам удобнее получить расчёт потерянных клиентов и план выхода в онлайн?</div>
+              <div class="quiz-channel-grid" id="qchannels">
+                <div class="quiz-channel-option" onclick="selectChannel(this,'vk')"><span class="quiz-channel-icon">🔵</span><span>ВКонтакте</span></div>
+                <div class="quiz-channel-option" onclick="selectChannel(this,'telegram')"><span class="quiz-channel-icon">✈️</span><span>Telegram</span></div>
+                <div class="quiz-channel-option" onclick="selectChannel(this,'call')"><span class="quiz-channel-icon">📞</span><span>Звонок</span></div>
+                <div class="quiz-channel-option" onclick="selectChannel(this,'max')"><span class="quiz-channel-icon">💬</span><span>МАКС</span></div>
+              </div>
+              <div class="quiz-field"><label>Ваше имя</label><input type="text" class="quiz-text-input" id="qname" placeholder="Как к вам обращаться?" oninput="validateStep5()"></div>
+              <div class="quiz-field"><label>Телефон</label><input type="tel" class="quiz-text-input" id="qphone" placeholder="+7 (___) ___-__-__" oninput="validateStep5()"></div>
+              <div class="quiz-field"><label>Ник или ссылка в мессенджере</label><input type="text" class="quiz-text-input" id="qmessenger" placeholder="@username или vk.com/..."></div>
+              <div class="quiz-nav-bottom">
+                <button class="quiz-back-btn" onclick="prevStep(5)">← Назад</button>
+                <button class="quiz-nav-btn" id="qbtn-5" onclick="submitQuiz()" disabled>Получить разбор 🚀</button>
+              </div>
+            </div>
+
+          </div><!-- /quiz-inner -->
+
+          <!-- SUCCESS -->
+          <div class="quiz-success" id="quizSuccess">
+            <div class="quiz-success-icon">🎉</div>
+            <h3>Готово! Свяжемся в течение часа</h3>
+            <p>Уже готовлю разбор по вашей нише. Увидите: сколько людей ищут ваши услуги, кто из конкурентов их забирает и что сделать первым шагом.</p>
+            <a href="#block-5-aha-proof" class="btn btn-primary">Посмотреть кейсы пока ждёте →</a>
+          </div>
+
+        </div><!-- /quiz-box -->
+      </div>
+    </section>
+
+    <!-- ====== BLOCK 3: MICRO JOBS ====== -->
+    <section id="block-3-micro-jobs" class="section section-white fade-in">
+      <div class="container">
+        <span class="label">Что мы берём на себя</span>
+        <h2>Мы берём на себя всё — <span class="text-mark" style="background:var(--accent2);color:#fff;">вы занимаетесь бизнесом</span>, а не ищете клиентов</h2>
+        <span class="accent-line accent-line-coral"></span>
+        <div class="jobs-list">
+          <div class="job-item"><div class="job-num">1</div><div><h3>Разбираемся в вашей нише за вас</h3><p>Изучаем конкурентов, аудиторию, запросы. От вас — один созвон на 2–5 часов. Дальше всё изучаем сами.</p></div></div>
+          <div class="job-item"><div class="job-num">2</div><div><h3>Создаём сайт, который продаёт, а не просто «красиво выглядит»</h3><p>Структура выстроена под ваших клиентов: их страхи, вопросы, критерии выбора.</p></div></div>
+          <div class="job-item"><div class="job-num">3</div><div><h3>Запускаем рекламу и оптимизируем каждый день</h3><p>Не «настроили и забыли» — ежедневная работа с объявлениями, ставками, конверсиями.</p></div></div>
+          <div class="job-item"><div class="job-num">4</div><div><h3>Объясняем результаты без терминов</h3><p>Вы всегда понимаете, что происходит и куда идут деньги.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== BLOCK 4: AHA + ROI CALC ====== -->
+    <section id="block-4-aha" class="section fade-in" style="position:relative;overflow:hidden;">
+      <div class="search-queries-bg" id="searchQueriesBg"></div>
+      <div class="container">
+        <div class="aha-layout">
+          <div>
+            <span class="label">Узнайте прямо сейчас</span>
+            <h2>Есть ли спрос на ваши услуги в интернете?</h2>
+            <span class="accent-line"></span>
+            <p style="color:var(--text-sec);margin-bottom:6px">На бесплатном 30-минутном разборе я покажу:</p>
+            <ul class="aha-checklist">
+              <li><div class="check-dot">✓</div><span>Сколько людей в вашем городе ежемесячно ищут ваши услуги в Яндексе</span></li>
+              <li><div class="check-dot">✓</div><span>Кто из конкурентов уже забирает этих клиентов</span></li>
+              <li><div class="check-dot">✓</div><span>Что нужно сделать первым шагом, чтобы получить заявки за 7–14 дней</span></li>
+              <li><div class="check-dot">✓</div><span>Что может вам помешать достигнуть ваших целей</span></li>
+              <li><div class="check-dot">✓</div><span>Выясним текущую ситуацию и потенциальный рост</span></li>
+            </ul>
+            <a href="#block-12-final-cta" class="btn btn-primary btn-lg">Хочу разбор — покажите, сколько я теряю →</a>
+            <p class="no-oblig">Никаких обязательств. Конкретные цифры по вашей нише — сразу на созвоне.</p>
+          </div>
+          <div class="roi-calc">
+            <div class="roi-calc-title">Калькулятор прибыли<span class="roi-badge">Интерактив</span></div>
+            <div class="calc-field"><label>Средний чек <span id="avgCheckVal">40 000 ₽</span></label><input type="range" id="avgCheck" min="1000" max="200000" step="1000" value="40000" oninput="updateCalc()"></div>
+            <div class="calc-field"><label>Трафик в месяц, чел. <span id="trafficVal">1 200</span></label><input type="range" id="trafficPerMonth" min="100" max="50000" step="100" value="1200" oninput="updateCalc()"></div>
+            <div class="calc-field"><label>Конверсия сейчас, % <span id="convCurrentVal">1%</span></label><input type="range" id="convCurrent" min="0.5" max="10" step="0.1" value="1" oninput="updateCalc()"></div>
+            <div class="calc-field"><label>Конверсия после нас, % <span id="convTargetVal">7%</span></label><input type="range" id="convTarget" min="1" max="20" step="0.5" value="7" oninput="updateCalc()"></div>
+            <div class="calc-field"><label>Маржинальность, % <span id="marginVal">40%</span></label><input type="range" id="margin" min="10" max="90" step="5" value="40" oninput="updateCalc()"></div>
+            <div class="calc-results">
+              <div class="calc-row"><span class="calc-row-label">Заявок сейчас</span><span class="calc-row-val" id="leadsBefore">12</span></div>
+              <div class="calc-row"><span class="calc-row-label">Заявок после</span><span class="calc-row-val green" id="leadsAfter">84</span></div>
+              <div class="calc-row"><span class="calc-row-label">Прибыль сейчас / мес.</span><span class="calc-row-val" id="profitBefore">192 000 ₽</span></div>
+              <div class="calc-row"><span class="calc-row-label">Прибыль после / мес.</span><span class="calc-row-val green" id="profitAfter">1 344 000 ₽</span></div>
+            </div>
+            <div class="calc-delta">
+              <div class="calc-delta-label">Дополнительная прибыль в месяц</div>
+              <div class="calc-delta-val" id="deltaMonth">+ 1 152 000 ₽</div>
+              <div class="calc-delta-year" id="deltaYear">≈ 13 824 000 ₽ в год</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== BLOCK 5: CASES ====== -->
+    <section id="block-5-aha-proof" class="section section-white fade-in">
+      <div class="container">
+        <span class="label">Реальные кейсы</span>
+        <h2>Снизили цену лида в 63 раза, сократив рекламный бюджет в 2 раза.</h2>
+        <p style="color:var(--text-sec);margin-bottom:28px;margin-top:12px">Как это работает на практике — цифры наших клиентов</p>
+        <span class="accent-line"></span>
+        <div class="cases-tabs" id="casesTabs">
+          <button class="case-tab active" data-case="coworking">«Кабинеты Рихтера»</button>
+          <button class="case-tab" data-case="katharsis">KATHARSIS</button>
+          <button class="case-tab" data-case="dc52">Detailing Center 52</button>
+          <button class="case-tab" data-case="kuzov">Центр защиты кузова</button>
+          <button class="case-tab" data-case="zigma">Зигма-Арт</button>
+        </div>
+        <div>
+          <!-- Coworking -->
+          <div class="case-panel active" id="case-coworking">
+            <div class="case-company">«Кабинеты Рихтера», коворкинг · Москва</div>
+            <div class="case-cols">
+              <div class="case-col before"><div class="case-col-label before">До работы с нами</div><ul>
+                <li>5 заявок по ~40 000 ₽ каждая</li><li>Загрузка пространства 12–15%</li><li>Нет системного онлайн-маркетинга</li>
+              </ul></div>
+              <div class="case-col after"><div class="case-col-label after">После работы с нами</div><ul>
+                <li>90+ заявок в первый месяц</li><li>Загрузка выросла до 31%</li><li>Стоимость заявки — 656 ₽</li><li>Рекламный бюджет снижен в 2 раза</li>
+              </ul></div>
+            </div>
+            <div class="case-quote">«Стоимость заявки в 60+ раз ниже, чем при работе с типичным подрядчиком. Результат — с первого месяца»</div>
+          </div>
+          <!-- KATHARSIS -->
+          <div class="case-panel" id="case-katharsis">
+            <div class="case-company">Студия детейлинга KATHARSIS · Нижний Новгород</div>
+            <div class="case-cols">
+              <div class="case-col before"><div class="case-col-label before">До работы с нами</div><ul>
+                <li>Не было сайта вообще</li><li>Не было заявок из интернета</li><li>Клиенты только по сарафану</li>
+              </ul></div>
+              <div class="case-col after"><div class="case-col-label after">После работы с нами</div><ul>
+                <li>28 заявок за 1 месяц с сайта</li><li>6 заявок через ВКонтакте</li><li>Сайт, Яндекс.Директ, соцсети, отчёты</li>
+              </ul></div>
+            </div>
+            <div class="case-quote">«С Егором работаем около полугода. Работы стало существенно больше, выросло количество звонков. Очень доволен и буду рекомендовать как грамотного специалиста»</div>
+          </div>
+          <!-- DC52 -->
+          <div class="case-panel" id="case-dc52">
+            <div class="case-company">Detailing Center 52 · Нижний Новгород</div>
+            <div class="case-cols">
+              <div class="case-col before"><div class="case-col-label before">До работы с нами</div><ul>
+                <li>Старый сайт без рекламы</li><li>Яндекс Карты без результата</li><li>Заявок из интернета нет</li>
+              </ul></div>
+              <div class="case-col after"><div class="case-col-label after">После работы с нами</div><ul>
+                <li>20+ лидов с Яндекс Карт</li><li>8 заявок с сайта за 1 месяц</li><li>Без запуска платной рекламы</li>
+              </ul></div>
+            </div>
+            <div class="case-quote">«Просто добавили сайт в Карты — и сразу пошли звонки и заявки. Это было неожиданно быстро»</div>
+          </div>
+          <!-- Kuzov -->
+          <div class="case-panel" id="case-kuzov">
+            <div class="case-company">Центр защиты кузова · Детейлинг</div>
+            <div class="case-cols">
+              <div class="case-col before"><div class="case-col-label before">Ситуация</div><ul>
+                <li>Несезон — февраль</li><li>Сложная ниша с низким спросом</li><li>Высокая конкуренция</li>
+              </ul></div>
+              <div class="case-col after"><div class="case-col-label after">Результат за месяц</div><ul>
+                <li>8–10 заявок даже в несезон</li><li>Конверсия сайта — 10%</li><li>Стоимость заявки — 3 600 ₽</li>
+              </ul></div>
+            </div>
+            <div class="case-quote">«Февраль — мёртвый сезон для детейлинга. Но конверсия сайта вышла на 10% — это сильный результат для ниши»</div>
+          </div>
+          <!-- Zigma -->
+          <div class="case-panel" id="case-zigma">
+            <div class="case-company">Зигма-Арт — театральная студия для детей и взрослых · Москва</div>
+            <div class="case-cols">
+              <div class="case-col before"><div class="case-col-label before">До работы с нами (декабрь–январь)</div><ul>
+                <li>2 месяца рекламы у другого подрядчика</li><li>1 заявка за 2 месяца</li><li>0 новых клиентов</li>
+              </ul></div>
+              <div class="case-col after"><div class="case-col-label after">Тестовый период — февраль</div><ul>
+                <li>8 заявок за первый месяц</li><li>6 из них стали клиентами</li><li>Конверсия в клиента — 75%</li>
+              </ul></div>
+            </div>
+            <div class="case-quote">«За 2 месяца с предыдущим подрядчиком — ноль. За первый месяц тестов с Егором — 8 заявок и 6 новых учеников»</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== BLOCK: ПРО МЕНЯ ====== -->
+    <section id="block-about" class="section section-white fade-in">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-photo-wrap">
+            <div class="about-photo"><img src="https://egornazoff69-dot.github.io/claude_vibecoding/moia-fotka.webp" alt="Егор Назаров" style="width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:20px;">
+            </div>
+            <div class="about-stats-row">
+              <div class="about-stat"><div class="about-stat-num">3+</div><div class="about-stat-desc">лет в маркетинге</div></div>
+              <div class="about-stat"><div class="about-stat-num">417</div><div class="about-stat-desc">проектов в базе</div></div>
+              <div class="about-stat"><div class="about-stat-num">656 ₽</div><div class="about-stat-desc">мин. цена заявки</div></div>
+            </div>
+          </div>
+          <div class="about-content">
+            <span class="label">Кто за этим стоит</span>
+            <h2>Егор Назаров — маркетолог, основатель агентства</h2>
+            <span class="accent-line"></span>
+            <p class="about-text">3 года назад я начинал с одного: делал сайты руками и сам настраивал Яндекс.Директ, ВКонтакте, Яндекс.Карты — всё вручную, проект за проектом.</p>
+            <p class="about-text">Сегодня за каждым запуском — накопленный опыт 417 проектов и комплекс из 12 нейросетей, который я собрал специально под задачи маркетинга для малого бизнеса.</p>
+            <p class="about-text">Комплекс делает конкретное: ускоряет производство сайта в 2–3 раза и исключает человеческие ошибки на этапе разработки. Именно поэтому я сдаю готовый сайт под ключ за 7–10 дней — там, где студии закладывают месяц.</p>
+            <p class="about-text"><strong>Что это значит для вас:</strong> Вы запускаетесь быстрее → быстрее идёт реклама → быстрее приходят заявки → быстрее выходите на окупаемость. В среднем — в 2–3 раза быстрее, чем при работе с обычным подрядчиком.</p>
+            <p class="about-text">Я работаю лично с каждым проектом. Вы общаетесь не с менеджером — со мной.</p>
+            <div class="about-badges">
+              <div class="about-badge-item">🎯 Исследую аудиторию по методу AJTBD</div>
+              <div class="about-badge-item">📊 Еженедельные отчёты без воды</div>
+              <div class="about-badge-item">⚡ Запуск за 7–14 дней</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="block-6-value" class="section fade-in">
+      <div class="container">
+        <span class="label">Результат через 30 дней</span>
+        <h2>Что получает бизнес через 30 дней работы с нами</h2>
+        <span class="accent-line"></span>
+        <div class="value-grid">
+          <div class="value-card"><div class="value-card-label"><span class="emoji-d">💰 </span>Измеримая ценность</div><h3>Стоимость заявки в 10–60 раз ниже</h3><p>Кейс: «Кабинеты Рихтера», коворкинг · Москва — с 40 000 ₽ до 656 ₽ за заявку. Не за квартал — за первый месяц.</p></div>
+          <div class="value-card"><div class="value-card-label"><span class="emoji-d">⚡ </span>Функциональная ценность</div><h3>Первые заявки — через 7–12 дней</h3><p>Не «подождите 3 месяца». Реальный результат уже в первый месяц работы.</p></div>
+          <div class="value-card"><div class="value-card-label"><span class="emoji-d">🧘 </span>Эмоциональная ценность</div><h3>Вы перестаёте бояться конкурентов</h3><p>Теперь вы в интернете — и вас находят. Тревога уходит, уверенность приходит.</p></div>
+          <div class="value-card"><div class="value-card-label"><span class="emoji-d">🏆 </span>Социальная ценность</div><h3>Выглядите как крупные игроки рынка</h3><p>Клиенты видят вас в поиске и доверяют больше. Профессионально — онлайн и офлайн.</p></div>
+        </div>
+        <div class="trust-block">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">«С Егором работаем около полугода. Изначально не было сайта вообще. Сейчас — красивый и информативный сайт, Яндекс.Директ, соцсети, еженедельные отчёты. Работы стало существенно больше, выросло количество звонков. Очень доволен и буду рекомендовать как грамотного специалиста»</p>
+            <div class="review-author">— Студия детейлинга KATHARSIS, Нижний Новгород</div>
+          </div>
+          <div class="trust-stats">
+            <div class="tstat"><div class="tstat-num">417</div><div class="tstat-desc">успешных проектов</div></div>
+            <div class="tstat"><div class="tstat-num">7</div><div class="tstat-desc">дней до заявок</div></div>
+            <div class="tstat"><div class="tstat-num">6–9%</div><div class="tstat-desc">конверсия сайта</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== BLOCK 7: RECOGNITION + CHECKBOXES ====== -->
+    <section id="block-7-recognition" class="section section-dark fade-in">
+      <div class="container">
+        <span class="label label-light">Узнаёте себя?</span>
+        <h2 style="color:var(--white)">Если хоть один пункт — про вас, пора действовать</h2>
+        <span class="accent-line" style="background:var(--accent1)"></span>
+        <p style="color:rgba(255,255,255,.5);font-size:.82rem;margin-bottom:18px">Нажмите на пункты, которые относятся к вам</p>
+        <div class="rec-list" id="recList">
+          <div class="rec-checkbox" onclick="toggleRec(this)"><div class="rec-cb-box"></div><p class="rec-cb-text">Клиент сказал вам: «Я вас нашёл через знакомых — в интернете вас нет»</p></div>
+          <div class="rec-checkbox" onclick="toggleRec(this)"><div class="rec-cb-box"></div><p class="rec-cb-text">Вы заходите на Яндекс.Карты и видите конкурента с 200 отзывами. А у вас — ноль</p></div>
+          <div class="rec-checkbox" onclick="toggleRec(this)"><div class="rec-cb-box"></div><p class="rec-cb-text">Пробовали разобраться с рекламой сами — запутались и бросили</p></div>
+          <div class="rec-checkbox" onclick="toggleRec(this)"><div class="rec-cb-box"></div><p class="rec-cb-text">Слышали «нужен сайт, нужна реклама» — но не знаете, с чего начать и кому доверять</p></div>
+          <div class="rec-checkbox" onclick="toggleRec(this)"><div class="rec-cb-box"></div><p class="rec-cb-text">Боитесь отдать деньги и получить красивые обещания без результата</p></div>
+        </div>
+        <div class="rec-counter" id="recCounter"></div>
+        <div class="rec-emotion">
+          <p><strong>Тревога. Ощущение, что что-то упускаете. Злость на себя, что всё откладываете.</strong><br><br>
+          Это нормально. Большинство сильных бизнесов пришли в интернет именно с этой точки. Разница — кто помог им сделать первый шаг правильно.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== BLOCK 8: HOW WE WORK ====== -->
+    <section id="block-8-how-we-work" class="section fade-in">
+      <div class="container">
+        <span class="label">Наш процесс</span>
+        <h2>Как мы переводим ваш <span class="text-mark">офлайн-бизнес в онлайн</span> — шаг за шагом</h2>
+        <span class="accent-line"></span>
+        <div class="steps-grid">
+          <div class="step"><div class="step-num">1</div><div class="step-time">1–2 дня</div><h3>Исследование</h3><p>Изучаем вашу аудиторию, конкурентов и спрос в нише.</p><div class="step-result">Знаем, кто ваш покупатель</div></div>
+          <div class="step"><div class="step-num">2</div><div class="step-time">3–5 дней</div><h3>Сайт</h3><p>Создаём лендинг, который снимает возражения вашей аудитории.</p><div class="step-result">Конверсия 6–9%</div></div>
+          <div class="step"><div class="step-num">3</div><div class="step-time">с 7-го дня</div><h3>Реклама</h3><p>Запускаем Яндекс.Директ на людей, которые прямо сейчас ищут ваши услуги.</p><div class="step-result">Первые заявки</div></div>
+          <div class="step"><div class="step-num">4</div><div class="step-time">Еженедельно</div><h3>Отчётность</h3><p>Присылаем отчёт: сколько заявок, по какой цене, что оптимизируем.</p><div class="step-result">Полная прозрачность</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== BLOCK 9: POINT B + IPHONE ====== -->
+    <section id="block-9-point-b" class="section fade-in" style="background:linear-gradient(135deg,#F8F7F0 0%,rgba(157,247,255,.12) 100%)">
+      <div class="container">
+        <div class="pb-layout">
+          <!-- Left -->
+          <div>
+            <span class="label">Ваш результат</span>
+            <h2>Как выглядит ваш бизнес через 30 дней</h2>
+            <span class="accent-line"></span>
+            <!-- Emotions: mobile only -->
+            <div class="pb-emotions">
+              <div class="pb-emotion"><div class="pb-emoji">😌</div><div><h3>Спокойствие</h3><p>Маркетинг работает без вашего участия.</p></div></div>
+              <div class="pb-emotion"><div class="pb-emoji">💪</div><div><h3>Уверенность</h3><p>Вы знаете, откуда приходят клиенты и сколько они стоят.</p></div></div>
+              <div class="pb-emotion"><div class="pb-emoji">🏅</div><div><h3>Гордость</h3><p>Вы наконец-то выглядите профессионально в интернете.</p></div></div>
+            </div>
+            <div class="pb-story">
+              <div class="pb-story-time">📱 Утро, 30-й день</div>
+              <p class="pb-story-text">Вы открываете телефон — <strong>4 новые заявки за ночь.</strong> Люди нашли вас через Яндекс, прочитали сайт, оставили контакты.<br><br>Вы звоните — они уже «тёплые», уже про вас знают. Менеджер закрывает <strong>двоих из четырёх.</strong><br><br>Вы занимаетесь бизнесом, а не ищете клиентов.</p>
+            </div>
+          </div>
+
+          <!-- Right: iPhone mockup -->
+          <div style="display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:8px;">
+            <!--
+              ИНСТРУКЦИЯ: Когда пришлёшь фото мокапа iPhone,
+              замени весь .iphone-wrap на:
+              <div style="position:relative;width:260px;">
+                <img src="iphone-mockup.png" style="width:100%;" alt="iPhone">
+                <div class="notif-scroll" style="position:absolute;top:14%;left:6%;right:6%;height:72%;overflow:hidden;border-radius:12px;">
+                  <div class="notif-track">... карточки ...</div>
+                </div>
+              </div>
+            -->
+            <div class="iphone-wrap">
+              <div class="iphone-btn"></div>
+              <div class="iphone-btn iphone-btn2"></div>
+              <div class="iphone-vol1"></div>
+              <div class="iphone-vol1 iphone-vol2" style="top:138px"></div>
+              <div class="iphone-screen">
+                <div class="iphone-island"></div>
+                <div class="iphone-status"><span class="iphone-time">9:41</span><span class="iphone-icons">●●●</span></div>
+                <div class="notif-header">Уведомления</div>
+                <div class="notif-scroll">
+                  <div class="notif-track" id="notifTrack">
+                    <!-- Cards x2 for seamless loop -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p style="font-size:.72rem;color:var(--text-sec);margin-top:12px;text-align:center;max-width:200px;">Так выглядит утро вашего телефона через 30 дней</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== BLOCK 10: FAQ ====== -->
+    <section id="block-10-barriers" class="section section-white fade-in">
+      <div class="container">
+        <span class="label">Часто спрашивают</span>
+        <h2>Снимаем барьеры — честно и по делу</h2>
+        <span class="accent-line accent-line-coral"></span>
+        <div class="faq-list">
+          <div class="faq-item"><button class="faq-trigger" onclick="toggleFAQ(this)"><span>Боюсь потратить деньги и не получить результат</span><div class="faq-icon">+</div></button><div class="faq-body"><div class="faq-body-inner">Предоплата — 50%. Остаток платите по неделям, когда уже видите работу и результаты. Никакого «заплати всё вперёд» — мы зарабатываем, когда вы видите эффект.</div></div></div>
+          <div class="faq-item"><button class="faq-trigger" onclick="toggleFAQ(this)"><span>Я не разбираюсь в этом — мне будет сложно?</span><div class="faq-icon">+</div></button><div class="faq-body"><div class="faq-body-inner">Мы объясняем всё на понятном языке, без терминов. Вы видите отчёт — и сразу понимаете, что происходит. Ваша задача — ответить на несколько вопросов о бизнесе. Остальное — наше.</div></div></div>
+          <div class="faq-item"><button class="faq-trigger" onclick="toggleFAQ(this)"><span>Уже пробовали рекламу — не сработало</span><div class="faq-icon">+</div></button><div class="faq-body"><div class="faq-body-inner">Покажем на разборе, почему именно не сработало — и что мы сделаем по-другому. Конкретно, с примерами. Бесплатно, без обязательств. Если наш подход вас не убедит — не работаем.</div></div></div>
+          <div class="faq-item"><button class="faq-trigger" onclick="toggleFAQ(this)"><span>Не знаю, с чего начать</span><div class="faq-icon">+</div></button><div class="faq-body"><div class="faq-body-inner">Начните с разбора. 30 минут — и у вас будет чёткий план: что делать, в какой последовательности, за какие деньги. Даже если потом не будете работать с нами — получите конкретный маршрут.</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== BLOCK 11: COMPARISON ====== -->
+    <section id="block-11-comparison" class="section fade-in">
+      <div class="container">
+        <span class="label">Почему мы</span>
+        <h2>Сравните сами — и выберите лучшее</h2>
+        <span class="accent-line"></span>
+        <div class="comp-filter">
+          <span class="comp-filter-label">Фильтр:</span>
+          <label class="comp-toggle"><input type="checkbox" id="keyFilter" onchange="filterRows()">Показать только ключевые критерии</label>
+        </div>
+        <div class="table-wrap">
+          <table class="comp-table" id="compTable">
+            <thead><tr><th>Критерий</th><th>Фрилансер</th><th>Типовое агентство</th><th class="col-us">✦ Мы</th></tr></thead>
+            <tbody>
+              <tr class="key-row" data-key="true"><td>Подход к работе</td><td>Разовые задачи, без системы</td><td>Шаблонные решения, много клиентов одновременно</td><td class="col-us">Системный подход: исследование, стратегия, запуск, отчётность</td></tr>
+              <tr class="key-row" data-key="true"><td>Скорость запуска</td><td>Сроки плавают</td><td>Старт через 3–6 недель</td><td class="col-us">Запуск за 7 дней по прописанному процессу</td></tr>
+              <tr data-key="false"><td>Аналитика и отчётность</td><td>Отчётов может не быть</td><td>Сложные отчёты, много терминов</td><td class="col-us">Еженедельные отчёты на понятном языке, фокус на заявках</td></tr>
+              <tr class="key-row" data-key="true"><td>Ответственность за результат</td><td>Нет прозрачных KPI</td><td>Ориентир на показы и клики</td><td class="col-us">Фокус на заявках и стоимости лида, KPI привязаны к результату</td></tr>
+              <tr data-key="false"><td>Использование ИИ</td><td>Точечные эксперименты</td><td>Редко системно внедряют ИИ</td><td class="col-us">ИИ-инструменты для анализа, связи каналов и отчётности</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== BLOCK 12: FINAL CTA ====== -->
+    <section id="block-12-final-cta" class="section section-dark final-cta-section fade-in">
+      <div class="container">
+        <span class="label label-light">Следующий шаг</span>
+        <h2>Узнайте, сколько клиентов вы теряете прямо сейчас</h2>
+        <div class="final-bullets">
+          <div class="fbullet"><div class="fbullet-dot"></div><span>Сколько людей уже ищут вас в Яндексе — и уходят к конкурентам</span></div>
+          <div class="fbullet"><div class="fbullet-dot"></div><span>Конкретные первые шаги для получения заявок за 7–14 дней</span></div>
+          <div class="fbullet"><div class="fbullet-dot"></div><span>30 минут, без обязательств, конкретные цифры по вашей нише</span></div>
+        </div>
+        <a href="https://t.me/yourhandle" class="btn btn-primary btn-lg" style="display:inline-flex;margin:0 auto">
+          Хочу бесплатный разбор — покажите мою точку роста →
+        </a>
+        <p class="urgency">Разборов в месяц — не более <strong>8</strong>. Работаю только с теми, кому реально могу дать результат.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <a href="#" class="logo" style="font-size:.95rem">nazarov<span>.</span>marketing</a>
+          <p class="footer-note">© 2026 · Выводим офлайн-бизнес в интернет</p>
+        </div>
+        <div class="footer-links">
+          <a href="#block-4-aha">Бесплатный разбор</a>
+          <a href="#block-5-aha-proof">Кейсы</a>
+          <a href="#block-10-barriers">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  // === PROGRESS BAR ===
+  const progressBar = document.getElementById('progressBar');
+  window.addEventListener('scroll', () => {
+    const d = document.body.scrollHeight - window.innerHeight;
+    progressBar.style.width = (d > 0 ? (window.scrollY / d) * 100 : 0) + '%';
+  }, {passive:true});
+
+  // === HEADER ===
+  window.addEventListener('scroll', () => {
+    document.getElementById('siteHeader').classList.toggle('scrolled', window.scrollY > 60);
+  }, {passive:true});
+
+  // === SMOOTH SCROLL ===
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href');
+      if (id === '#') return;
+      const el = document.querySelector(id);
+      if (el) { e.preventDefault(); window.scrollTo({top: el.getBoundingClientRect().top + window.scrollY - 80, behavior:'smooth'}); }
+    });
+  });
+
+  // === FADE IN ===
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, {threshold: 0.08});
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // === ROI CALCULATOR ===
+  function fmtRub(n) { return Math.round(n).toLocaleString('ru-RU') + ' ₽'; }
+  function setFill(s) {
+    const pct = ((+s.value - +s.min) / (+s.max - +s.min)) * 100;
+    s.style.setProperty('--fill', pct + '%');
+  }
+  function updateCalc() {
+    const ac = +document.getElementById('avgCheck').value;
+    const tr = +document.getElementById('trafficPerMonth').value;
+    const cc = +document.getElementById('convCurrent').value;
+    const ct = +document.getElementById('convTarget').value;
+    const mg = +document.getElementById('margin').value;
+    document.getElementById('avgCheckVal').textContent = ac.toLocaleString('ru-RU') + ' ₽';
+    document.getElementById('trafficVal').textContent = tr.toLocaleString('ru-RU');
+    document.getElementById('convCurrentVal').textContent = cc + '%';
+    document.getElementById('convTargetVal').textContent = ct + '%';
+    document.getElementById('marginVal').textContent = mg + '%';
+    document.querySelectorAll('input[type="range"]').forEach(setFill);
+    const lb = tr * (cc/100), la = tr * (ct/100);
+    const pb = lb * ac * (mg/100), pa = la * ac * (mg/100);
+    const d = pa - pb;
+    document.getElementById('leadsBefore').textContent = Math.round(lb);
+    document.getElementById('leadsAfter').textContent = Math.round(la);
+    document.getElementById('profitBefore').textContent = fmtRub(pb);
+    document.getElementById('profitAfter').textContent = fmtRub(pa);
+    document.getElementById('deltaMonth').textContent = '+ ' + fmtRub(d);
+    document.getElementById('deltaYear').textContent = '≈ ' + fmtRub(d * 12) + ' в год';
+  }
+  updateCalc();
+
+  // === CASES ===
+  document.querySelectorAll('.case-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.case-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.case-panel').forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      const p = document.getElementById('case-' + tab.dataset.case);
+      if (p) p.classList.add('active');
+    });
+  });
+
+  // === FAQ ===
+  function toggleFAQ(btn) {
+    const item = btn.closest('.faq-item');
+    const body = item.querySelector('.faq-body');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-body').style.maxHeight = '0'; });
+    if (!isOpen) { item.classList.add('open'); body.style.maxHeight = body.scrollHeight + 'px'; }
+  }
+
+  // === COMPARISON ===
+  function filterRows() {
+    const checked = document.getElementById('keyFilter').checked;
+    document.querySelectorAll('#compTable tbody tr').forEach(row => {
+      row.style.display = checked && row.dataset.key !== 'true' ? 'none' : '';
+    });
+  }
+
+  // === RECOGNITION CHECKBOXES ===
+  function toggleRec(el) {
+    el.classList.toggle('checked');
+    if (el.classList.contains('checked')) { el.querySelector('.rec-cb-box').textContent = '✓'; }
+    else { el.querySelector('.rec-cb-box').textContent = ''; }
+    const checked = document.querySelectorAll('.rec-checkbox.checked').length;
+    const counter = document.getElementById('recCounter');
+    if (checked > 0) {
+      counter.classList.add('visible');
+      const msgs = ['','Один пункт уже повод действовать','Два пункта — пора разобраться','Три пункта — точно теряете клиентов','Четыре пункта — упущенная выручка считается в миллионах','Пять из пяти — разбор нужен вам прямо сейчас'];
+      counter.textContent = msgs[Math.min(checked, 5)];
+    } else {
+      counter.classList.remove('visible');
+    }
+  }
+
+  // === QUIZ LOGIC ===
+  let currentStep = 1;
+  const totalSteps = 5;
+  const quizAnswers = {niche: null, city: '', presence: [], goals: [], channel: null};
+
+  function showStep(n) {
+    document.querySelectorAll('.quiz-step').forEach(s => s.classList.remove('active'));
+    const step = document.getElementById('qstep-' + n);
+    if (step) step.classList.add('active');
+    document.getElementById('quizFill').style.width = (n / totalSteps * 100) + '%';
+    currentStep = n;
+  }
+
+  // Step 1: niche text input
+  function validateNiche() {
+    const val = document.getElementById('qniche-text').value.trim();
+    quizAnswers.niche = val;
+    document.getElementById('qbtn-1').disabled = !val;
+  }
+
+  // Step 2: city validation
+  function validateStep2() {
+    document.getElementById('qbtn-2').disabled = !document.getElementById('qcity').value.trim();
+  }
+
+  // Step 3: presence checkboxes
+  function toggleCheckbox(el, value) {
+    el.classList.toggle('selected');
+    if (el.classList.contains('selected')) {
+      if (!quizAnswers.presence.includes(value)) quizAnswers.presence.push(value);
+    } else {
+      quizAnswers.presence = quizAnswers.presence.filter(v => v !== value);
+    }
+    document.getElementById('qbtn-3').disabled = quizAnswers.presence.length === 0;
+  }
+
+  // Step 4: goals multi-select
+  function toggleGoal(el, value, isOther) {
+    el.classList.toggle('selected');
+    if (el.classList.contains('selected')) {
+      if (!quizAnswers.goals.includes(value)) quizAnswers.goals.push(value);
+    } else {
+      quizAnswers.goals = quizAnswers.goals.filter(v => v !== value);
+    }
+    const otherWrap = document.getElementById('qother-4');
+    if (isOther && el.classList.contains('selected')) {
+      otherWrap.classList.add('visible');
+    } else if (isOther) {
+      otherWrap.classList.remove('visible');
+    }
+    document.getElementById('qbtn-4').disabled = quizAnswers.goals.length === 0;
+  }
+
+  // Step 5: channel + contacts validation
+  function selectChannel(el, value) {
+    document.querySelectorAll('#qchannels .quiz-channel-option').forEach(o => o.classList.remove('selected'));
+    el.classList.add('selected');
+    quizAnswers.channel = value;
+    validateStep5();
+  }
+  function validateStep5() {
+    const name = document.getElementById('qname').value.trim();
+    const phone = document.getElementById('qphone').value.trim();
+    document.getElementById('qbtn-5').disabled = !(name && phone);
+  }
+
+  function nextStep(from) {
+    if (from === 1) quizAnswers.niche = document.getElementById('qniche-text').value;
+    if (from === 2) quizAnswers.city = document.getElementById('qcity').value;
+    if (from < totalSteps) showStep(from + 1);
+  }
+  function prevStep(from) {
+    if (from > 1) showStep(from - 1);
+  }
+
+  function submitQuiz() {
+    quizAnswers.name = document.getElementById('qname').value;
+    quizAnswers.phone = document.getElementById('qphone').value;
+    quizAnswers.messenger = document.getElementById('qmessenger').value;
+    console.log('Quiz answers:', quizAnswers);
+    document.querySelector('.quiz-inner').style.display = 'none';
+    document.getElementById('quizSuccess').classList.add('visible');
+    document.getElementById('quizFill').style.width = '100%';
+  }
+
+  // === YANDEX SEARCH ANIMATION ===
+  (function(){
+    const niches = [
+      {query:'детейлинг Москва', title:'Детейлинг в Москве — от 3 500 ₽', url:'detailing-pro.ru', desc:'Профессиональный уход за автомобилем. Запись онлайн.', notif:'+1 заявка — Детейлинг'},
+      {query:'коворкинг аренда', title:'Коворкинг Москва — от 500 ₽/день', url:'cowork-space.ru', desc:'Переговорные, фиксированные места, безлимитный кофе.', notif:'+1 заявка — Коворкинг'},
+      {query:'стоматология рядом', title:'Стоматология — приём без очереди', url:'dental-plus.ru', desc:'Лечение и протезирование. Скидка 15% на первый визит.', notif:'+1 заявка — Стоматология'},
+      {query:'автосервис Москва', title:'Автосервис на Шаболовской', url:'avtoservice-m.ru', desc:'Диагностика бесплатно. Запчасти от производителя.', notif:'+1 заявка — Автосервис'},
+      {query:'детские кружки', title:'Детский центр "Звёздочка"', url:'zvezda-kids.ru', desc:'Творчество, спорт, развитие. Пробное занятие бесплатно.', notif:'+1 заявка — Кружки'},
+    ];
+    let idx = 0;
+    const typeEl = document.getElementById('ytypeText');
+    const titleEl = document.getElementById('yresult-title');
+    const notifEl = document.getElementById('ynotif');
+    const notifTextEl = document.getElementById('ynotif-text');
+    const resultsEl = document.getElementById('ysearchResults');
+    if (!typeEl) return;
+
+    function typeText(text, cb) {
+      typeEl.textContent = '';
+      let i = 0;
+      const iv = setInterval(() => {
+        typeEl.textContent = text.slice(0, ++i);
+        if (i >= text.length) { clearInterval(iv); setTimeout(cb, 400); }
+      }, 65);
+    }
+
+    function runCycle() {
+      const n = niches[idx % niches.length]; idx++;
+      notifEl.classList.remove('visible');
+      resultsEl.style.transition = 'none';
+      resultsEl.style.opacity = '0';
+      resultsEl.style.transform = 'translateY(8px)';
+      typeText(n.query, () => {
+        titleEl.textContent = n.title;
+        const urlEl = document.querySelector('.ysearch-url');
+        const descEl = document.querySelector('.ysearch-desc');
+        if(urlEl) urlEl.textContent = n.url;
+        if(descEl) descEl.textContent = n.desc;
+        resultsEl.style.transition = 'all .4s ease';
+        resultsEl.style.opacity = '1';
+        resultsEl.style.transform = 'translateY(0)';
+        setTimeout(() => {
+          notifTextEl.textContent = n.notif;
+          notifEl.classList.add('visible');
+        }, 900);
+        setTimeout(runCycle, 4200);
+      });
+    }
+    setTimeout(runCycle, 800);
+  })();
+
+  // === DOT GRID CANVAS (hero → quiz fade) ===
+  (function(){
+    const canvas = document.getElementById('dotGridCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let W, H, quizBottom;
+    function resize(){
+      W = canvas.width = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+    }
+    function getQuizBottom(){
+      const quiz = document.getElementById('block-quiz');
+      if (!quiz) return H * 3;
+      const r = quiz.getBoundingClientRect();
+      return window.scrollY + r.bottom;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    const SPACING = 28;
+    let scrollY = 0;
+    window.addEventListener('scroll', () => { scrollY = window.scrollY; }, {passive:true});
+
+    function drawDots(){
+      ctx.clearRect(0, 0, W, H);
+      quizBottom = getQuizBottom();
+      const heroStart = 0;
+      const fadeStart = quizBottom - window.innerHeight * 0.6;
+      const fadeEnd = quizBottom;
+
+      const cols = Math.ceil(W / SPACING) + 1;
+      const rows = Math.ceil(H / SPACING) + 1;
+      const t = Date.now() / 1000;
+
+      for (let r = 0; r < rows; r++){
+        for (let c = 0; c < cols; c++){
+          const x = c * SPACING;
+          const y = r * SPACING;
+          const absY = y + scrollY;
+
+          // Only draw if within hero→quiz range
+          if (absY < heroStart || absY > fadeEnd) continue;
+
+          // Fade out as approaching quiz end
+          let alpha = 0.22;
+          if (absY > fadeStart) {
+            alpha = 0.22 * (1 - (absY - fadeStart) / (fadeEnd - fadeStart));
+          }
+          if (alpha <= 0) continue;
+
+          // Pulse effect
+          const pulse = Math.sin(t * 1.4 + c * 0.4 + r * 0.6);
+          const dotAlpha = alpha * (0.5 + 0.5 * pulse);
+          const radius = 1.3 + 0.5 * Math.max(0, pulse);
+
+          ctx.beginPath();
+          ctx.arc(x, y, radius, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(51,51,51,${dotAlpha.toFixed(3)})`;
+          ctx.fill();
+        }
+      }
+      requestAnimationFrame(drawDots);
+    }
+    drawDots();
+  })();
+
+  // === FLOATING SEARCH QUERIES (block 4) ===
+  (function(){
+    const bg = document.getElementById('searchQueriesBg');
+    if (!bg) return;
+    const queries = [
+      'детейлинг Москва','коворкинг аренда','автосервис рядом',
+      'стоматология цены','ремонт квартир недорого','детские кружки',
+      'парикмахерская запись','фотостудия аренда','юрист консультация',
+      'бухгалтер для ИП','фитнес клуб рядом','клининг офиса',
+      'ремонт телефонов','установка окон','натяжные потолки цена',
+    ];
+    function spawnQuery(){
+      const el = document.createElement('div');
+      el.className = 'sq';
+      el.textContent = '🔍 ' + queries[Math.floor(Math.random() * queries.length)];
+      // Only left 0-13% or right 87-100%
+      const side = Math.random() > 0.5;
+      el.style.left = side
+        ? (Math.random() * 13) + '%'           // left side
+        : (87 + Math.random() * 13) + '%';    // right side
+      // Top-heavy: more near top, fewer near bottom
+      const rawT = Math.pow(Math.random(), 1.8); // bias toward 0 (top)
+      el.style.bottom = (10 + rawT * 70) + '%';
+      const dur = 7 + Math.random() * 5;
+      el.style.animationDuration = dur + 's';
+      el.style.animationDelay = (Math.random() * 2) + 's';
+      bg.appendChild(el);
+      setTimeout(() => el.remove(), (dur + 3) * 1000);
+    }
+    for (let i = 0; i < 6; i++) setTimeout(spawnQuery, i * 500);
+    setInterval(spawnQuery, 1600);
+  })();
+
+
+  const notifs = [
+    {src:'Telegram',icon:'✈️',color:'#229ED9',name:'Дмитрий К.',phone:'8 (916) 472-**-**',body:'Детейлинг · через сайт'},
+    {src:'ВКонтакте',icon:'🔵',color:'#0077FF',name:'Анна Р.',phone:'8 (903) 581-**-**',body:'Коворкинг · ВКонтакте'},
+    {src:'МАКС',icon:'💬',color:'#7B61FF',name:'Сергей В.',phone:'8 (925) 374-**-**',body:'Автосервис · через сайт'},
+    {src:'Яндекс Карты',icon:'📍',color:'#FC3F1D',name:'Ольга М.',phone:'8 (904) 196-**-**',body:'Детейлинг · Яндекс Карты'},
+    {src:'Яндекс Директ',icon:'🟡',color:'#FFCC00',name:'Роман Л.',phone:'8 (912) 847-**-**',body:'Строительство · Яндекс Директ'},
+    {src:'Telegram',icon:'✈️',color:'#229ED9',name:'Наталья П.',phone:'8 (926) 053-**-**',body:'Образование · через сайт'},
+  ];
+  const times = ['Только что','1 мин','2 мин','5 мин','8 мин','14 мин','Только что','3 мин','6 мин','10 мин','16 мин','22 мин'];
+  function buildNotifCard(n, i) {
+    return `<div class="notif-card">
+      <div class="notif-card-header">
+        <div class="notif-app-icon" style="background:${n.color}">${n.icon}</div>
+        <span class="notif-app-name">${n.src}</span>
+        <span class="notif-time">${times[i % times.length]}</span>
+      </div>
+      <div class="notif-title">Новая заявка — ${n.name}</div>
+      <div class="notif-body">${n.phone} · ${n.body}</div>
+    </div>`;
+  }
+  const track = document.getElementById('notifTrack');
+  if (track) {
+    const allCards = [...notifs, ...notifs].map((n, i) => buildNotifCard(n, i)).join('');
+    track.innerHTML = allCards;
+  }
+  </script>
+</body>
+</html>
